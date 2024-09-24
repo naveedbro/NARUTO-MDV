@@ -2,4 +2,4 @@
 
 ##  ***[SCAN-QR](naruto-md)***
 
-*By RNDevelop TEAM*
+*By RNDEVELOP TEAM*
