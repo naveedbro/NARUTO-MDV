@@ -1,3 +1,5 @@
 # Naruto Md Coming Soon 
 
-By RNKING TEAM
+##  ***[SCAN-QR](naruto-md)***
+
+*By RNDevelop TEAM*
