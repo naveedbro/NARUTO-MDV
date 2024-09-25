@@ -24,7 +24,7 @@ if ( !q.includes('facebook') ) return reply('❌ *Please enter Valid facebook Vi
 */
 const fbdata = await getFBInfo(q)
 const msgg =`
-*CYBER-X FB DOWNLOADER* 📥
+*NARUTO-MD FB DOWNLOADER* 📥
  
 *🎬 Title -: ${fbdata.title}*
 
@@ -36,8 +36,8 @@ const msgg =`
 *│ 🎥 1 - SD Quality*
 *│ 🎬 2 - HD Quality*
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
 
 await conn.sendMessage(from, { image: { url : fbdata.thumbnail } , caption: msgg }, { quoted: mek })
 
