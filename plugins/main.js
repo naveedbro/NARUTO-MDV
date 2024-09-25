@@ -22,7 +22,7 @@ const db_pool = new DBM({
 		let logoimage = await db_pool.get('ALIVE_IMAGE')
 await conn.sendMessage(from, { image: { url: logoimage }, caption: data }, { quoted: mek })
 } catch (e) {
-const data = await fetchJson("https://raw.githubusercontent.com/darkalphaxteam/UPLOADS/main/JSON/info.json")
+const data = await fetchJson("https://raw.githubusercontent.com/naveedbro/UPLOADS/main/JSON/info.json")
 await conn.sendMessage(from, { image: { url: data.image }, caption: data.text }, { quoted: mek })
 }
 
@@ -43,10 +43,10 @@ const ccp = await si.cpu()
 const cinfo = await si.version()
 let timee = await si.time()
 const plat = os.hostname()
-let data = await fetchJson('https://raw.githubusercontent.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT/main/package.json')
+let data = await fetchJson('https://raw.githubusercontent.com/naveedbro/NARUTO-MD/main/package.json')
 
 if ( plat.length > 15 ) {
-const infomsg = `🖥️  *CYBER-X 2.0 SYSTEM INFORMATIONS*  🖥️
+const infomsg = `🖥️  *NARUTO-MD SYSTEM INFORMATIONS*  🖥️
 
 🤖  *_Bot's System informations_*
 
@@ -75,7 +75,7 @@ return await conn.sendMessage(from , { text: infomsg  }, { quoted: mek } )
 }
 
 
-const infomsg = `🖥️  *CYBER-X 2.0 SYSTEM INFORMATIONS*  🖥️
+const infomsg = `🖥️  *NARUTO-MD SYSTEM INFORMATIONS*  🖥️
 
 🤖  *_Bot's System informations_*
 
@@ -122,9 +122,9 @@ const db_pool = new DBM({
     db: config.DATABASE_URL
 }) 
  const data = await db_pool.get('MENU_TEXT')
-await conn.sendMessage(from, { audio: { url: 'https://github.com/darkalphaxteam/CYBER-X-BETA-1.5.1-RELEASE-/raw/master/LocalData/audio/.alive.mp3' }, mimetype: 'audio/mp4', ptt : true ,fileName: 'alive.mp3' })
+await conn.sendMessage(from, { audio: { url: 'https://github.com/naveedbro/UPLOADS/raw/main/LocalData/audio/alive.mp3' }, mimetype: 'audio/mp4', ptt : true ,fileName: 'alive.mp3' })
 const yt =`
-📑 *CYBER-X WHATSAPP BOT COMMANDS LIST*
+📑 *NARUTO WHATSAPP BOT COMMANDS LIST*
 
 ${data} 
 
@@ -141,14 +141,14 @@ ${data}
   1.7  Text to Image Command list
   1.8  Photo edit Command list
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
 
 await conn.sendMessage(from,{text: yt },{quoted:mek })
 
 } catch (e) {
 const yt =`
-📑 *CYBER-X WHATSAPP BOT COMMANDS LIST*
+📑 *NARUTO WHATSAPP BOT COMMANDS LIST*
 
 📚 This is the result of our team's hard work and our team owns the bot's rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances
 
@@ -164,8 +164,8 @@ const yt =`
   1.6  Extra command list
   1.7  Text to Image command list
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
 
 await conn.sendMessage(from,{text: yt },{quoted:mek })
 
@@ -192,19 +192,19 @@ try{
  const vcard = `BEGIN:VCARD\n` // metadata of the contact card
             + `VERSION:3.0\n`
             + `FN:${data}\n` // full name
-            + `ORG:CYBER-X GANG 2023;\n`// the organization of the contact
+            + `ORG: NARUTO-MD TEAM 2024;\n`// the organization of the contact
             + `TEL;type=CELL;type=VOICE;waid=${puka}:+${puka}\n`// WhatsApp ID + phone number
             + `END:VCARD`
 await conn.sendMessage(from,{ contacts: { displayName: data ,contacts: [{ vcard }] }},{quoted:mek })
 } catch (e) {
-await conn.sendMessage(from,{text: "*❗ No Added Data in Database*\n\n_Please Do this to Use Your Number for this Vcard_\n\n1. ```.apply OWNER_NUMBER=YOUR NUMBER```\n2. ```.apply OWNER_NAME=YOUR NAME```\n\nᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ  ᴏꜰꜰɪᴄɪᴀʟ\nᴄʏʙᴇʀ-x ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ɪɪ" },{quoted:mek })
+await conn.sendMessage(from,{text: "*❗ No Added Data in Database*\n\n_Please Do this to Use Your Number for this Vcard_\n\n1. ```.apply OWNER_NUMBER=YOUR NUMBER```\n2. ```.apply OWNER_NAME=YOUR NAME```\n\nʀɴᴅᴇᴠᴇʟᴏᴘ  ᴏꜰꜰɪᴄɪᴀʟ\nɴᴀʀᴜᴛᴏ-ᴍᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ" },{quoted:mek })
 const vcard = `BEGIN:VCARD\n` // metadata of the contact card
             + `VERSION:3.0\n`
-            + `FN:CYBER-X USER\n` // full name
-            + `ORG:CYBER-X GANG 2023;\n`// the organization of the contact
+            + `FN:NARUTO-MD USER\n` // full name
+            + `ORG:NARUTO-MD TEAM 2024;\n`// the organization of the contact
             + `TEL;type=CELL;type=VOICE;waid=94711421243:+94711421243\n`// WhatsApp ID + phone number
             + `END:VCARD`
-await conn.sendMessage(from,{ contacts: { displayName: "CYBER-X USER" ,contacts: [{ vcard }] }},{quoted:mek })
+await conn.sendMessage(from,{ contacts: { displayName: "NARUTO-MD USER" ,contacts: [{ vcard }] }},{quoted:mek })
 
 }
 })
@@ -212,43 +212,43 @@ await conn.sendMessage(from,{ contacts: { displayName: "CYBER-X USER" ,contacts:
 cmd({
     pattern: "script",
     react: "🧭",
-    alias: ["sc"],
-    desc: "To Get Cyber-X Bot Script",
+    alias: ["sc","repo","git"],
+    desc: "To Get Naruto-Md Bot Script",
     category: "main",
     use: '.script',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
-const deta = await fetchJson('https://api.github.com/repos/darkalphaxteam/CYBER-X-WHATSAPP-BOT')
-let data = await fetchJson('https://raw.githubusercontent.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT/main/package.json')
-const maru =`*CYBER-X 2.0 WHATSAPP USER BOT* 
+const deta = await fetchJson('https://api.github.com/repos/naveedbro/NARUTO-MD')
+let data = await fetchJson('https://raw.githubusercontent.com/naveedbro/NARUTO-MD/main/package.json')
+const maru =`*NARUTO-MD WHATSAPP USER BOT* 
 
 This is the result of our team's hard work and our team owns the bot's rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances.
 
-https://github.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT
+https://github.com/naveedbro/NARUTO-MD
 
 *─────────────────────*
-🎲 *Cyber-X 2.0 Repostory Status*
+🍥 *Naruto-Md Repostory Status*
 *─────────────────────*
 
 *️⃣ Stars - ${deta.stargazers_count}
 🔀 Forks - ${deta.forks_count}
-🛜 Watchers - ${deta.subscribers_count}
+💫 Watchers - ${deta.subscribers_count}
 
 *─────────────────────*
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
 await conn.sendMessage(from,
 {text: maru ,
 contextInfo:{
         externalAdReply:{
-            title: "CYBER-X 2.0 WHATSAPP BOT" ,
+            title: "NARUTO-MD BOT REPO" ,
             body: `Latest released Version : v${data.version}`,
             thumbnail: await getBuffer("https://telegra.ph/file/fee375e711ade5064e3b6.jpg"),
             mediaType:2,
-            mediaUrl: "https://github.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT",
+            mediaUrl: "https://github.com/naveedbro/NARUTO-MD",
         }
 }
     },
