@@ -45,8 +45,8 @@ let puka = `🛠️ *Hey This is Your All Setting List* ⚙️
 🛠️ *Inbox User* - ${config.INBOX_USER}
 🛠️ *Banned User* - ${config.BANNED_USER}
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
  await conn.sendMessage(from , { text: puka }, { quoted: mek } )
 
 } catch (e) {
@@ -59,7 +59,7 @@ cmd({
     pattern: "setup",
     react: "⚙",
     alias: ["set"],
-    desc: "Cyber-X Database Tools",
+    desc: "Naruto-Md Database Tools",
     category: "main",
     use: '.setup',
     filename: __filename
@@ -72,7 +72,7 @@ if ( !m.quoted ) return reply('🧑‍💻  *Please quote a Text to Update the D
     db: config.DATABASE_URL
 })
 		await db_pool.insert( `${senderNumber}DB` , m.quoted.msg )
-		const eka = `\n🧑‍🔧 *Cyber-X Details Update Tool* ⚙️
+		const eka = `\n🧑‍🔧 *Naruto-Md Details Update Tool* ⚙️
 
 _You can add quoted text as more title.Please check some quoted message's Templates_
 
@@ -87,7 +87,7 @@ _You can add quoted text as more title.Please check some quoted message's Templa
 *│ 1.6 - Set as Stickers owner name*
 *│ 1.7 - Set as Stickers pack name*
 
-ᴄʏʙᴇʀ-x ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ ᴛᴏᴏʟ
+ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ ᴛᴏᴏʟ
 ᴜꜱᴇʀ ɪᴅ - ${senderNumber}`
 			await conn.sendMessage(from,{text: eka },{quoted:mek })
 	
