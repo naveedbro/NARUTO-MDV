@@ -15,7 +15,7 @@ cmd({
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2,mime , botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
-if (!quoted) return reply('❗ *Please mention a Image or 1-9 Seconds Video Clip*')
+if (!quoted) return reply('❗ *Please mention a Image or Video Clip*')
 
 const db_pool = new DBM({
     db: config.DATABASE_URL
