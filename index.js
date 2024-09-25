@@ -42,7 +42,7 @@ console.log("✔️ SQL Database Connected")
 // ===========SESSION===========
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.split("cyber-x@;;;")[1]
+const sessdata = config.SESSION_ID.split("naruto-md@;;;")[1]
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -58,12 +58,12 @@ const port = process.env.PORT || 8000;
 async function connectToWA() {
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 const { version, isLatest } = await fetchLatestBaileysVersion()
-console.log(`🤖 Cyber-X using WA v${version.join('.')}, isLatest: ${isLatest}`)
+console.log(`🍥 Naruto Md using WA v${version.join('.')}, isLatest: ${isLatest}`)
 const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
 printQRInTerminal: true,
-browser: ["CYBER-X 2.1", "safari", "3.3"],
+browser: ["Naruto-Md", "safari", "3.3"],
 auth: state,
 getMessage: async (key) => {
             if (store) {
@@ -71,7 +71,7 @@ getMessage: async (key) => {
                 return msg.message || undefined
             }
             return {
-                conversation: "Cyber-X Web 2.1"
+                conversation: "Naruto-Md Web 2.1"
             }
         }})
 
@@ -90,9 +90,9 @@ require("./plugins/" + plugin);
 }
 });
 console.log('📚 All Plugins installed')
-console.log('🐉 Cyber-X WhatsApp Bot connected ✅')
+console.log('🐉 Naruto Md WhatsApp Bot connected ✅')
 //const botada = jidNormalizedUser(conn.user.id)   
-//conn.sendMessage(botada, { image: { url : "https://i.imgur.com/5fjnt53.jpeg" } , caption: "*Cyber-X 2.0 Connected to WhatsApp* ✔️\n\n_This is the result of our team's hard work and our team owns the bot's rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances._\n\n🔰 *Official GitHub* - ```https://github.com/darkalphaxteam```\n\n🪀 *WhatsApp Community* - ```https://chat.whatsapp.com/CwFuybm14L697Viv4fvbE3```\n\n🧿 *Announcement Group* - ```https://chat.whatsapp.com/DZfpcfE1w0SAAWeikPKyFA```\n\n*ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰꜰɪᴄɪᴀʟ*\n*ᴀʟʟ ʀɪɢʜᴛ ʀᴇꜱᴇʀᴠᴇᴅ - ᴛᴇᴀᴍ*"})
+//conn.sendMessage(botada, { image: { url : "https://imgur.com/a/5jymNs5.jpeg" } , caption: "*Naruto-Md Connected to WhatsApp* ✔️\n\n_This is the result of our team's hard work and our team owns the bot's rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances._\n\n🔰 *Official GitHub* - ```https://github.com/naveedbro```\n\n🪀 *WhatsApp Group* - ```https://rb.gy/5zx1lv```\n\n🧿 *Announcement Channel* - ```https://rb.gy/54ccrp```\n\n*ᴏꜰꜰɪᴄɪᴀʟ*\n*ᴀʟʟ ʀɪɢʜᴛ ʀᴇꜱᴇʀᴠᴇᴅ - ᴛᴇᴀᴍ*"})
 }
 })
 conn.ev.on('creds.update', saveCreds)
@@ -117,7 +117,7 @@ const isGroup = from.endsWith('@g.us')
 const sender = mek.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (mek.key.participant || mek.key.remoteJid)
 const senderNumber = sender.split('@')[0]
 const botNumber = conn.user.id.split(':')[0]
-const pushname = mek.pushName || 'Cyber-X user'
+const pushname = mek.pushName || 'Naruto-Md user'
 const isMe = botNumber.includes(senderNumber)
 const isOwner = ownerNumber.includes(senderNumber) || isMe
 const botNumber2 = await jidNormalizedUser(conn.user.id);
@@ -159,7 +159,7 @@ const isBanUser = [ ...banbn ]
       .includes(sender)
 
  
-let epaneda =  "94778962038,94711421243,94775512050,94715166712,94787820101,94715346004,94784596431,94729932436,94785893102,94762862143,94743386944,94788749741,94755514590,94774605140"
+let epaneda =  "923096566451,923096566452,919083366564,918293190720,919547261290"
 const epada = epaneda.split(",")
 const isDev = [ ...epada ]
       .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
@@ -169,34 +169,19 @@ const isDev = [ ...epada ]
     if( !isDev && from == '120363174739054837@g.us' ) return
     if( !isDev && from == '120363043873308146@g.us' ) return
     
-  if( sender == '94711421243@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `🥷`, key: mek.key }})
-}
-    if( sender == '94778962038@s.whatsapp.net' ) {
+  if( sender == '923096566451@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `🥷`, key: mek.key }})
 }
 
-   if( sender == '94775512050@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `⚖️`, key: mek.key }})
-}
-  
-  if( sender == '94715166712@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `🌙`, key: mek.key }})
-}
-
-if( sender == '94715346004@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `💫`, key: mek.key }})
-}
-
-if( sender == '94784596431@s.whatsapp.net' ) {
+if( sender == '923096566452@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `⭐`, key: mek.key }})
 }
 
-if( sender == '94787820101@s.whatsapp.net' ) {
+if( sender == '919083366554@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `⚡`, key: mek.key }})
 }
 
-if( sender == '94762862143@s.whatsapp.net' ) {
+if( sender == '918293190720@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `⭐`, key: mek.key }})
 }
 
@@ -208,11 +193,11 @@ if( sender == '94729932436@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `🔮`, key: mek.key }})
 }
 
-if( sender == '94785893102@s.whatsapp.net' ) {
+if( sender == '919547261290@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `⚖`, key: mek.key }})
 }
 
-if( sender == '94755514590@s.whatsapp.net' ) {
+if( sender == '94755514890@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `🕊️`, key: mek.key }})
 }
 
@@ -334,7 +319,7 @@ if (config.AI_MODE == "true"){
 if ( body.startsWith('/gpt')) {
 let bodyy = body.split('/gpt')[1]
 const aimsg = await fetchJson(`https://vihangayt.me/tools/chatgpt?q=${bodyy}`)
-reply("🧠 *Cyber-X AI Mode :- chatGPT*\n\n"+aimsg.data)
+reply("🧠 *Naruto-Md AI Mode :- chatGPT*\n\n"+aimsg.data)
 }
 }
 //------------------------------ REPLYS WITHOUT COMMANDS --------------------------------
@@ -392,7 +377,7 @@ await conn.sendMessage(from, { react: { text: `☑️`, key: mek.key }})
 if ( rew.includes('APK') ) {
 const getid = rew.split("ɪᴅ - ")[1]
 const app = await download(getid)
-await conn.sendMessage(from, { document : { url : app.dllink } , caption:"📦 *𝙰𝙿𝙺 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁* 📦\n\n📚 *App name : " + app.name + "*\n📂 *App Size : " + app.size + "*\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${app.name}.apk` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : app.dllink } , caption:"📦 *𝙰𝙿𝙺 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁* 📦\n\n📚 *App name : " + app.name + "*\n📂 *App Size : " + app.size + "*\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${app.name}.apk` }, { quoted: mek })
 
 }
 if ( rew.includes('List Updated') ) {
@@ -405,13 +390,13 @@ if ( rew.includes('TIKTOK DOWNLOADER') ) {
 const getlink = rew.split("Link -: ")[1]
 const fulllink = getlink.split("_*")[0]
 let ttdl = await fg.tiktok(fulllink)
-await conn.sendMessage(from, { video: {url: ttdl.play }, caption: ttdl.nickname + "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: ttdl.play }, caption: ttdl.nickname + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
 }
 if ( rew.includes('FB DOWNLOADER') ) {
 const getlink = rew.split("Link -: ")[1]
 const fulllink = getlink.split("_*")[0]
 let ttdl = await getFBInfo(fulllink)
-await conn.sendMessage(from, { video: {url: ttdl.sd }, caption: "SD Quality\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: ttdl.sd }, caption: "SD Quality\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
 }
 
 }
@@ -423,7 +408,7 @@ const getlink = rew.split("ɪᴅ - ")[1]
 const fulllink = 'https://youtube.com/watch?v=' + getlink
 const dj = await dl.youtubedl(fulllink)
 await conn.sendMessage(from, { react: { text: `⬆️`, key: mek.key }})
-await conn.sendMessage(from, { document : { url : await dj.audio['128kbps'].download() } , caption: dj.title+ "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" ,mimetype: 'audio/mp3', fileName: `${dj.title}.mp3` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : await dj.audio['128kbps'].download() } , caption: dj.title+ "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'audio/mp3', fileName: `${dj.title}.mp3` }, { quoted: mek })
 await conn.sendMessage(from, { react: { text: `✔️`, key: mek.key }})
 
 }
@@ -444,9 +429,9 @@ if ( config.AUTO_REACT == 'true' ) {
 await conn.sendMessage(from, { react: { text: `☑️`, key: mek.key }})
 }
 
-return await conn.sendMessage(from, { document : { url : await dj.video['360p'].download() }  ,caption: dj.title + "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
+return await conn.sendMessage(from, { document : { url : await dj.video['360p'].download() }  ,caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
 }
-await conn.sendMessage(from, { video: {url: await dj.video['360p'].download() }, caption: dj.title + "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: await dj.video['360p'].download() }, caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
     
     
 if ( config.AUTO_REACT == 'true' ) {
@@ -458,7 +443,7 @@ if ( rew.includes('APK') ) {
 const getid = rew.split("ɪᴅ - ")[1]
 const app = await download(getid)
 const msgg =`
-*CYBER-X APK INFORMATIONS*
+*NARUTO-MD APK INFORMATIONS*
 
 📚 *App name -: ${app.name}*
 
@@ -470,8 +455,8 @@ const msgg =`
 
 📱 Play Store Link -: https://play.google.com/store/apps/details?id=${app.package}
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
 await conn.sendMessage(from, { image: { url : app.icon } , caption: msgg }, { quoted: mek })
 
 }
@@ -479,13 +464,13 @@ if ( rew.includes('TIKTOK DOWNLOADER') ) {
 const getlink = rew.split("Link -: ")[1]
 const fulllink = getlink.split("_*")[0]
 let ttdl = await fg.tiktok(fulllink)
-await conn.sendMessage(from, { video: {url: ttdl.wmplay }, caption: ttdl.nickname + "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: ttdl.wmplay }, caption: ttdl.nickname + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
 }
 if ( rew.includes('FB DOWNLOADER') ) {
 const getlink = rew.split("Link -: ")[1]
 const fulllink = getlink.split("_*")[0]
 let ttdl = await getFBInfo(fulllink)
-await conn.sendMessage(from, { video: {url: ttdl.hd }, caption: "HD Quality\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: ttdl.hd }, caption: "HD Quality\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
 }
 
 }
@@ -508,9 +493,9 @@ if ( config.AUTO_REACT == 'true' ) {
 await conn.sendMessage(from, { react: { text: `☑️`, key: mek.key }})
 }
 
-return await conn.sendMessage(from, { document : { url : await dj.video['720p'].download() }  ,caption: dj.title + "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
+return await conn.sendMessage(from, { document : { url : await dj.video['720p'].download() }  ,caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
 }
-await conn.sendMessage(from, { video: {url: await dj.video['720p'].download() }, caption: dj.title + "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: await dj.video['720p'].download() }, caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
     
     
 if ( config.AUTO_REACT == 'true' ) {
@@ -547,9 +532,9 @@ if ( config.AUTO_REACT == 'true' ) {
 await conn.sendMessage(from, { react: { text: `☑️`, key: mek.key }})
 }
 
-return await conn.sendMessage(from, { document : { url : await dj.video['1080p'].download() }  ,caption: dj.title + "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
+return await conn.sendMessage(from, { document : { url : await dj.video['1080p'].download() }  ,caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
 }
-await conn.sendMessage(from, { video: {url: await dj.video['1080p'].download() }, caption: dj.title + "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: await dj.video['1080p'].download() }, caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
     
     
 if ( config.AUTO_REACT == 'true' ) {
@@ -575,7 +560,7 @@ menuc += `⏲️ *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *MAIN COMMAND LIST-CYBER-X 2.0*
+let menumg = `🔐 *MAIN COMMAND LIST-NARUTO-MD*
 
 ${menuc}
 
@@ -585,9 +570,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/cace8541cd66c731250a9.jpg" }, caption: menumg }, { quoted: mek } )
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -611,7 +596,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 let baseURI = '/apps/' + config.HEROKU_APP_NAME
 await heroku.patch(baseURI + '/config-vars', {
                     body: {
-                        ['MODERATORS']: "94778962038"
+                        ['MODERATORS']: "923096566451"
                     }
                 });
 const resmsg =`*Moderator List Reseted* ✅
@@ -634,10 +619,10 @@ await db_pool.insert( "ALIVE_IMAGE" , getimage )
 const resmsg =`*Alive message and image Successfully Updated* ✅`
 reply(resmsg)
 }
-if ( rew.includes('Cyber-X Fouad-WA') ) {
+if ( rew.includes('Naruto-Md Fouad-WA') ) {
 const getmod = await mods()
 let moddata = getmod.com_whatsapp
-await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
 
 }
 }
@@ -656,7 +641,7 @@ menuc += `📥 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *DOWNLOAD COMMAND LIST-CYBER-X 2.0*
+let menumg = `🔐 *DOWNLOAD COMMAND LIST-NARUTO-MD*
 
 ${menuc}
 
@@ -666,9 +651,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/cace8541cd66c731250a9.jpg" }, caption: menumg } , { quoted: mek } )
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg } , { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -692,7 +677,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 let baseURI = '/apps/' + config.HEROKU_APP_NAME
 await heroku.patch(baseURI + '/config-vars', {
                     body: {
-                        ['INBOX_USER']: "94778962038"
+                        ['INBOX_USER']: "923096566451"
                     }
                 });
 const resmsg =`*Inbox User List Reseted* ✅
@@ -711,10 +696,10 @@ await db_pool.insert( "OWNER_NUMBER" , data )
 const resmsg =`*Owner Number Successfully Updated* ✅`
 reply(resmsg)
 }
-if ( rew.includes('Cyber-X Fouad-WA') ) {
+if ( rew.includes('Naruto-Md Fouad-WA') ) {
 const getmod = await mods()
 let moddata = getmod.com_fmwhatsapp
-await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
 
 }
 
@@ -734,7 +719,7 @@ menuc += `🔎 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *SEARCH COMMAND LIST-CYBER-X 2.0*
+let menumg = `🔐 *SEARCH COMMAND LIST-NARUTO-MD*
 
 ${menuc}
 
@@ -744,9 +729,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/cace8541cd66c731250a9.jpg" }, caption: menumg }, { quoted: mek } )
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -771,7 +756,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 let baseURI = '/apps/' + config.HEROKU_APP_NAME
 await heroku.patch(baseURI + '/config-vars', {
                     body: {
-                        ['BANNED_USER']: "94767438882"
+                        ['BANNED_USER']: "923096566452"
                     }
                 });
 const resmsg =`*Banned Users List Reseted* ✅
@@ -790,10 +775,10 @@ await db_pool.insert( "OWNER_NAME" , data )
 const resmsg =`*Owner Name Successfully Updated* ✅`
 reply(resmsg)
 }
-if ( rew.includes('Cyber-X Fouad-WA') ) {
+if ( rew.includes('Naruto-Md Fouad-WA') ) {
 const getmod = await mods()
 let moddata = getmod.com_gbwhatsapp
-await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
 
 }
 
@@ -812,7 +797,7 @@ menuc += `🧑‍🔧 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *PROFILE COMMAND LIST-CYBER-X 2.0*
+let menumg = `🔐 *PROFILE COMMAND LIST-NARUTO-MD*
 
 ${menuc}
 
@@ -822,9 +807,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/cace8541cd66c731250a9.jpg" }, caption: menumg } , { quoted: mek })
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg } , { quoted: mek })
 
 }
 if ( rew.includes('Details Update Tool') ) {
@@ -839,10 +824,10 @@ await db_pool.insert( "OPENAI_KEY" , data )
 const resmsg =`*OpenAi Key Successfully Updated* ✅`
 reply(resmsg)
 }
-if ( rew.includes('Cyber-X Fouad-WA') ) {
+if ( rew.includes('Naruto-Md Fouad-WA') ) {
 const getmod = await mods()
 let moddata = getmod.com_yowhatsapp
-await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
 
 }
 
@@ -861,7 +846,7 @@ menuc += `🪀 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *GROUP COMMAND LIST-CYBER-X 2.0*
+let menumg = `🔐 *GROUP COMMAND LIST-NARUTO-MD*
 
 ${menuc}
 
@@ -871,9 +856,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/cace8541cd66c731250a9.jpg" }, caption: menumg } , { quoted: mek })
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg } , { quoted: mek })
 
 }
 if ( rew.includes('Details Update Tool') ) {
@@ -903,7 +888,7 @@ menuc += `📪 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *EXTRA COMMAND LIST-CYBER-X 2.0*
+let menumg = `🔐 *EXTRA COMMAND LIST-NARUTO-MD*
 
 ${menuc}
 
@@ -913,9 +898,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/cace8541cd66c731250a9.jpg" }, caption: menumg }, { quoted: mek } )
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Database Reset Function') ) {
@@ -923,7 +908,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 const db_pool = new DBM({
     db: config.DATABASE_URL
 })
-const data = await fetchJson("https://raw.githubusercontent.com/darkalphaxteam/UPLOADS/main/JSON/info.json")
+const data = await fetchJson("https://raw.githubusercontent.com/naveedbro/UPLOADS/main/JSON/info.json")
 await db_pool.insert( "ALIVE_MESSAGE" , data.text )
 await db_pool.insert( "ALIVE_IMAGE" , data.image )
 const resmsg =`*Alive message and image Successfully Reseted* ✅`
@@ -954,13 +939,13 @@ menuc += `🌅 *Pattern - ${commands[i].pattern}* - _Enter your Text_
 `
 }}};
 
-let menumg = `🔐 *TEXT TO IMAGE COMMAND LIST-CYBER-X 2.0*
+let menumg = `🔐 *TEXT TO IMAGE COMMAND LIST-NARUTO-MD*
 
 ${menuc}
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/cace8541cd66c731250a9.jpg" }, caption: menumg }, { quoted: mek } )
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Details Update Tool') ) {
@@ -990,13 +975,13 @@ menuc += `📪 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *PHOTO EDIT COMMAND LIST-CYBER-X 2.0*
+let menumg = `🔐 *PHOTO EDIT COMMAND LIST-NARUTO-MD*
 
 ${menuc}
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/cace8541cd66c731250a9.jpg" }, caption: menumg }, { quoted: mek } )
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 }
@@ -1079,7 +1064,7 @@ console.log(isError)}
 })
 }
 app.get("/", (req, res) => {
-res.send("*Cyber-X WhatsApp Bot Working successfully..!*");
+res.send("*Naruto-Md WhatsApp Bot Working successfully..!*");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
