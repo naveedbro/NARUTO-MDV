@@ -1,6 +1,6 @@
 {
-    "name": "NARUTO-MD",
-    "version": "1.0.0",
+    "name": "CYBER-X",
+    "version": "2.0.0",
     "description": "A simple and easy-to-use WhatsApp bot project based on Multi-Device Baileys and written in JavaScript",
     "main": "index.js",
     "type": "commonjs",
@@ -9,9 +9,9 @@
         "stop": "pm2 stop wabot",
         "restart": "pm2 restart wabot"
     },
-    "author": "naveedbro",
+    "author": "darkalphaxteam",
     "dependencies": {
-        "@whiskeysockets/baileys": "git+https://github.com/naveedbro/Baileys-New.git",
+        "@whiskeysockets/baileys": "git+https://github.com/darkalphaxteam/Baileys-New.git",
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bochilteam/scraper-images" : "^1.0.2",
         "@blackamda/telegram-image-url" : "^1.0.0",
@@ -68,10 +68,10 @@
     },
     "repository": {
          "type": "git",
-         "url": "git+https://github.com/naveedbro/NARUTO-MD"
+         "url": "git+https://github.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT"
     },
     "bugs": {
-         "url": "https://github.com/naveedbro/NARUTO-MD"
+         "url": "https://github.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT"
     },
-  "homepage": "https://github.com/naveedbro/NARUTO-MD"
+  "homepage": "https://github.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT"
 }
