@@ -64,7 +64,7 @@ try{
             pattern: "autoreact",
             react: "⚙",
             alias: ["autor"],
-            desc: "To AUTO REACT Swith on / off to the Bot",
+            desc: "To AUTO REACT Swith on / off the Bot",
             category: "main",
             use: '.autoreact on/off',
             filename: __filename
