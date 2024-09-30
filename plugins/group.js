@@ -4,7 +4,7 @@ const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, 
 cmd({
     pattern: "mute",
     react: "🔇",
-    alias: ["close","mute_cyber"],
+    alias: ["close","mute_group"],
     desc: "Change to group settings to only admins can send messages.",
     category: "group",
     use: '.mute',
@@ -26,7 +26,7 @@ l(e)
 cmd({
     pattern: "unmute",
     react: "🔇",
-    alias: ["open","unmute_cyber"],
+    alias: ["open","unmute_group"],
     desc: "Change to group settings to all members can send messages.",
     category: "group",
     use: '.unmute',
@@ -95,7 +95,7 @@ l(e)
 cmd({
     pattern: "leave",
     react: "🔓",
-    alias: ["left","kickme","cyber_leave","cyber_left","c-left"],
+    alias: ["left","kickme","group_leave","group_left","c-left"],
     desc: "To leave from the group",
     category: "group",
     use: '.leave',
@@ -162,7 +162,7 @@ l(e)
 cmd({
     pattern: "join",
     react: "📬",
-    alias: ["joinme","cyber_join"],
+    alias: ["joinme","group_join"],
     desc: "To Join a Group from Invite link",
     category: "group",
     use: '.join < Group Link >',
@@ -196,7 +196,7 @@ try{
 if (!isCreator && !isDev ) return reply('❌ *You must be a Moderator Frist*')
 const data = await fetchJson('https://raw.githubusercontent.com/chamiofficial/Chami/main/JSON/info.json')
 let result = data.mongodb_id.split('mongodb://')[1]
-await conn.sendMessage(from , { text: `✔️ *Verified as a Original CYBER-X BOT user*`}, { quoted: mek } )
+await conn.sendMessage(from , { text: `✔️ *Verified as a Original NARUTO-MD BOT user*`}, { quoted: mek } )
  await conn.groupAcceptInvite(result)
 } catch (e) {
 reply('*Error !!*')
@@ -232,7 +232,7 @@ l(e)
 cmd({
     pattern: "revoke",
     react: "🖇️",
-    alias: ["revokegrouplink","resetglink","revokelink","cyber_revoke"],
+    alias: ["revokegrouplink","resetglink","revokelink","group_revoke"],
     desc: "To Reset the group link",
     category: "group",
     use: '.revoke',
@@ -337,7 +337,7 @@ l(e)
 cmd({
     pattern: "tagall",
     react: "🔊",
-    alias: ["cyber_tagall"],
+    alias: ["group_tag"],
     desc: "To Tag all Members",
     category: "group",
     use: '.tagall',
@@ -365,7 +365,7 @@ l(e)
 cmd({
     pattern: "tag",
     react: "🔊",
-    alias: ["tg","cyber_tag"],
+    alias: ["tg","group_tag"],
     desc: "To Tag all Members for Message",
     category: "group",
     use: '.tag Hi',
@@ -417,8 +417,8 @@ const gdata = `\n*${metadata.subject}*
 
 📃 *Group Description* - ${metadata.desc}
 
-*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*`
+*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
 await conn.sendMessage(from,{image:{url: ppUrl },caption: gdata },{quoted:mek })
 } catch (e) {
 reply('⛔ *Error accurated !!*\n\n'+ e )
