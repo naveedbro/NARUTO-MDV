@@ -1,17 +1,17 @@
 {
-    "name": "NARUTO-MD",
-    "version": "1.0.0",
+    "name": "CYBER-X",
+    "version": "2.0.0",
     "description": "A simple and easy-to-use WhatsApp bot project based on Multi-Device Baileys and written in JavaScript",
     "main": "index.js",
     "type": "commonjs",
     "scripts": {
-        "start": "pm2 start index.js --deep-monitoring --attach --name wabot",
+        "start": "node index.js",
         "stop": "pm2 stop wabot",
         "restart": "pm2 restart wabot"
     },
-    "author": "naveedbro",
+    "author": "darkalphaxteam",
     "dependencies": {
-        "@whiskeysockets/baileys": "git+https://github.com/naveedbro/Baileys-New.git",
+        "@whiskeysockets/baileys": "^6.7.5",
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bochilteam/scraper-images" : "^1.0.2",
         "@blackamda/telegram-image-url" : "^1.0.0",
@@ -23,10 +23,11 @@
         "translate-google" : "^1.5.0",
         "fb-downloader-new" : "^0.0.2",
         "fouadwa-scraper" : "^2.0.0",
+        "node-cache" : "^5.1.2",
         "aptoide-scraper" : "^1.0.1",
         "link-preview-js": "^3.0.4",
         "heroku-client" : "^3.1.0",
-        "betabotz-tools" : "^0.0.6",
+        "betabotz-tools" : "^0.0.7",
         "pino": "^7.0.5",
         "pm2": "^5.2.0",
         "util": "^0.12.4",
@@ -48,7 +49,7 @@
         "path": "^0.12.7",
         "youtubedl-core": "^4.11.4",
         "node-fetch": "^2.6.1",
-        "megajs": "^1.1.0",
+        "megajs": "^1.3.0",
         "vm": "^0.1.0",
         "wabetainfo": "^1.1.0",
         "caliph-api": "^1.0.0",
@@ -68,10 +69,10 @@
     },
     "repository": {
          "type": "git",
-         "url": "git+https://github.com/naveedbro/NARUTO-MD"
+         "url": "git+https://github.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT"
     },
     "bugs": {
-         "url": "https://github.com/naveedbro/NARUTO-MD"
+         "url": "https://github.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT"
     },
-  "homepage": "https://github.com/naveedbro/NARUTO-MD"
+  "homepage": "https://github.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT"
 }

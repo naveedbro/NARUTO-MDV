@@ -1,8 +1,8 @@
 {
-    "name": "Naruto-Md",
-    "description": "ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ",
-    "repository": "https://github.com/naveedbro/NARUTO-MD",
-    "logo": "https://files.catbox.moe/wzrddk.jpg",
+    "name": "CYBER-X 2.0",
+    "description": "ᴄʏʙᴇʀ-x ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ",
+    "repository": "https://github.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT",
+    "logo": "https://telegra.ph/file/71c859102f3625d06204b.jpg",
     "keywords": [
         "nodejs",
         "Bot",
@@ -13,7 +13,7 @@
     "env": {
         "SESSION_ID": {
             "description": "Type the Session-ID you got from scaning QR",
-            "required": false,
+            "required": true,
             "value": ""
         },
         "DATABASE_URL": {
@@ -51,7 +51,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "standard-1x"
+            "size": "free"
         }
     }
 }
