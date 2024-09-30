@@ -411,7 +411,7 @@ const gdata = `\n*${metadata.subject}*
 
 🐉 *Group Jid* - ${metadata.id}
 
-📬 *Participant Countto* - ${metadata.size}
+📬 *Participant Count* - ${metadata.size}
 
 👤 *Group Creator* - ${metadata.owner}
 
