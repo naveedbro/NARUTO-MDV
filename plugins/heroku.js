@@ -64,7 +64,7 @@ try{
             pattern: "autoreact",
             react: "⚙",
             alias: ["autor"],
-            desc: "To AUTO REACT Swith on / off the Bot",
+            desc: "To AUTO REACT Swith on / off to the Bot",
             category: "main",
             use: '.autoreact on/off',
             filename: __filename
@@ -107,7 +107,7 @@ try{
                 pattern: "antilink",
                 react: "⚙",
                 alias: ["anlk"],
-                desc: "To AUTO REACT Swith of the Bot",
+                desc: "To ANTI LINK Swith of the Bot",
                 category: "main",
                 use: '.antilink on/off',
                 filename: __filename
