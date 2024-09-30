@@ -12,7 +12,7 @@
     ],
     "env": {
         "SESSION_ID": {
-            "description": "Type the Session-ID you got from qr scaning QR",
+            "description": "Type the Session-ID you got from scaning QR",
             "required": true,
             "value": ""
         },
