@@ -30,9 +30,9 @@ cmd({
 		    let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 },
                 {
@@ -52,28 +52,28 @@ cmd({
             ]
             let opts = {
                 image: logoimage,
-                header: '𝙲𝚈𝙱𝙴𝚁-𝚇 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝚄𝚂𝙴𝚁 𝙱𝙾𝚃',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                header: '𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙱𝙾𝚃',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ',
                 body: data
 
             }
             return await conn.sendButtonMessage(from, buttons, m, opts)
         } catch (e) {
-            const datada = await fetchJson("https://raw.githubusercontent.com/darkalphaxteam/UPLOADS/main/JSON/info.json")
+            const datada = await fetchJson("https://raw.githubusercontent.com/naveedbro/UPLOADS/main/JSON/info.json")
             let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 },
                 {
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "FOLLOW US",
-                        url: "https://github.com/darkalphaxteam",
-                        merchant_url: "https://github.com/darkalphaxteam"
+                        display_text: "GITHUB REPO",
+                        url: "https://github.com/naveedbro",
+                        merchant_url: "https://github.com/naveedbro"
                     }),
                 },
                 {
@@ -86,8 +86,8 @@ cmd({
             ]
             let opts = {
                 image: 'https://telegra.ph/file/4c009990c1eb47c8b1d84.jpg',
-                header: '𝙲𝚈𝙱𝙴𝚁-𝚇 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝚄𝚂𝙴𝚁 𝙱𝙾𝚃',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                header: '𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙱𝙾𝚃',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ',
                 body: datada.text
 
             }
@@ -191,8 +191,8 @@ id: prefix +  `setimg SYSTEM_IMAGE=${imgURL}`
 	   let opts = {
                 image: imgURL,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
-                body: '🧑‍🔧 *Cyber-X Images Update Tool* ⚙️'
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ',
+                body: '🧑‍🔧 *Naruto-Md Images Update Tool* ⚙️'
 
             }
 
@@ -253,8 +253,8 @@ id: prefix +  `setimg OWNER_NUMBER=${m.quoted.msg}`
 	   let opts = {
                 image: '',
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
-                body: '🧑‍🔧 *Cyber-X Messages Update Tool* ⚙️'
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ',
+                body: '🧑‍🔧 *Naruto-Md Messages Update Tool* ⚙️'
 
             }
 
@@ -290,13 +290,13 @@ const ccp = await si.cpu()
 const cinfo = await si.version()
 let timee = await si.time()
 const plat = os.hostname()
-let data = await fetchJson('https://raw.githubusercontent.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT/main/package.json')
+let data = await fetchJson('https://raw.githubusercontent.com/naveedbro/NARUTO-MD/main/package.json')
  const db_pool = new DBM({
     db: config.DATABASE_URL
 })
 		const sysimg = await db_pool.get('SYSTEM_IMAGE')
 		if ( ccp.brand.includes('Skylake') ) {
-const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
+const infomsg = `🖥️  *NARUTO-MD SYSTEM INFORMATIONS*  🖥️
 
 🤖  *_Bot's System informations_*
 
@@ -323,17 +323,17 @@ const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 },
                 {
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "FOLLOW US",
-                        url: "https://github.com/darkalphaxteam",
-                        merchant_url: "https://github.com/darkalphaxteam"
+                        display_text: "GITHUB REPO",
+                        url: "https://github.com/naveedbro",
+                        merchant_url: "https://github.com/naveedbro"
                     }),
                 }
              
@@ -341,7 +341,7 @@ let buttons = [{
             let opts = {
                 image: sysimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ',
                 body: infomsg
 
             }
@@ -349,7 +349,7 @@ let buttons = [{
 }
 
 if ( plat.length > 15 ) {
-const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
+const infomsg = `🖥️  *NARUTO-MD SYSTEM INFORMATIONS*  🖥️
 
 🤖  *_Bot's System informations_*
 
@@ -376,17 +376,17 @@ const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 },
                 {
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "FOLLOW US",
-                        url: "https://github.com/darkalphaxteam",
-                        merchant_url: "https://github.com/darkalphaxteam"
+                        display_text: "GITHUB US",
+                        url: "https://github.com/naveedbro",
+                        merchant_url: "https://github.com/naveedbro"
                     }),
                 }
              
@@ -394,7 +394,7 @@ let buttons = [{
             let opts = {
                 image: sysimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ',
                 body: infomsg
 
             }
@@ -402,7 +402,7 @@ let buttons = [{
 }
 
 
-const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
+const infomsg = `🖥️  *NARUTO-MD SYSTEM INFORMATIONS*  🖥️
 
 🤖  *_Bot's System informations_*
 
@@ -429,17 +429,17 @@ const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
  let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 },
                 {
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "FOLLOW US",
-                        url: "https://github.com/darkalphaxteam",
-                        merchant_url: "https://github.com/darkalphaxteam"
+                        display_text: "GITHUB REPO",
+                        url: "https://github.com/naveedbro",
+                        merchant_url: "https://github.com/naveedbro"
                     }),
                 }
              
@@ -447,7 +447,7 @@ const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
             let opts = {
                 image: sysimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ',
                 body: infomsg
 
             }
@@ -458,10 +458,10 @@ const ccp = await si.cpu()
 const cinfo = await si.version()
 let timee = await si.time()
 const plat = os.hostname()
-let data = await fetchJson('https://raw.githubusercontent.com/darkalphaxteam/CYBER-X-WHATSAPP-BOT/main/package.json')
+let data = await fetchJson('https://raw.githubusercontent.com/naveedbro/NARUTO-MD/main/package.json')
 
 if ( plat.length > 15 ) {
-const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
+const infomsg = `🖥️  *NARUTO-MD SYSTEM INFORMATIONS*  🖥️
 
 🤖  *_Bot's System informations_*
 
@@ -490,7 +490,7 @@ return await conn.sendMessage(from , { text: infomsg  }, { quoted: mek } )
 }
 
 
-const infomsg = `🖥️  *CYBER-X 3.0 SYSTEM INFORMATIONS*  🖥️
+const infomsg = `🖥️  *NARUTO-MD SYSTEM INFORMATIONS*  🖥️
 
 🤖  *_Bot's System informations_*
 
@@ -524,7 +524,7 @@ cmd({
     pattern: "setupimage",
     react: "⚙",
     alias: ["setimg"],
-    desc: "Cyber-X Database Tools",
+    desc: "Naruto-Md Database Tools",
     category: "main",
     use: '.setup ALIVE_MESSAGE=Hi',
     dontAddCommandList : true ,
@@ -554,7 +554,7 @@ l(e)
 cmd({
     pattern: "ping",
     react: "📟",
-    alias: ["speed","cyber_ping"],
+    alias: ["speed","bot_ping"],
     desc: "To Check bot's ping",
     category: "main",
     use: '.ping',
@@ -576,7 +576,7 @@ cmd({
     pattern: "device",
     react: "ℹ️",
     alias: ["getdevice"],
-    desc: "Cyber-X User Checking Tool",
+    desc: "Naruto-Md User Checking Tool",
     category: "main",
     use: '.device',
     filename: __filename
@@ -609,10 +609,10 @@ if (m.quoted.id.startsWith("3A")) {
       text : `@${m.quoted.sender.split('@')[0]}  *Is Using:* ${ss}Web WhatsApp(QueenAmdi-Wa-Bot)${ss}`, 
       mentions : [m.quoted.sender]
     });
-  } else if (m.quoted.id.startsWith("CYBER2")) {
+  } else if (m.quoted.id.startsWith("NARUTO2")) {
   var ss= '```'
  conn.sendMessage(from, { 
-      text : `@${m.quoted.sender.split('@')[0]}  *Is Using:* ${ss}Web WhatsApp(Cyber-X-Wa-Bot)${ss}`, 
+      text : `@${m.quoted.sender.split('@')[0]}  *Is Using:* ${ss}Web WhatsApp(Naruto-Wa-Bot)${ss}`, 
       mentions : [m.quoted.sender]
     });
 } else if (m.quoted.id.startsWith("ZEROTWO")) {
@@ -644,7 +644,7 @@ cmd({
     pattern: "id",
     react: "📚",
     alias: ["getdeviceid"],
-    desc: "Cyber-X User Checking Tool",
+    desc: "Naruto-Md User Checking Tool",
     category: "main",
     use: '.id',
     filename: __filename
@@ -680,19 +680,19 @@ try{
  const vcard = `BEGIN:VCARD\n` // metadata of the contact card
             + `VERSION:3.0\n`
             + `FN:${data}\n` // full name
-            + `ORG:CYBER-X GANG 2023;\n`// the organization of the contact
+            + `ORG:NARUTO-MD TEAM 2024;\n`// the organization of the contact
             + `TEL;type=CELL;type=VOICE;waid=${puka}:+${puka}\n`// WhatsApp ID + phone number
             + `END:VCARD`
 await conn.sendMessage(from,{ contacts: { displayName: data ,contacts: [{ vcard }] }},{quoted:mek })
 } catch (e) {
-await conn.sendMessage(from,{text: "*❗ No Added Data in Database*\n\n_Please Do this to Use Your Number for this Vcard_\n\n1. ```.apply OWNER_NUMBER=YOUR NUMBER```\n2. ```.apply OWNER_NAME=YOUR NAME```\n\nᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ  ᴏꜰꜰɪᴄɪᴀʟ\nᴄʏʙᴇʀ-x ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ɪɪ" },{quoted:mek })
+await conn.sendMessage(from,{text: "*❗ No Added Data in Database*\n\n_Please Do this to Use Your Number for this Vcard_\n\n1. ```.apply OWNER_NUMBER=YOUR NUMBER```\n2. ```.apply OWNER_NAME=YOUR NAME```\n\nʀɴᴅᴇᴠᴇʟᴏᴘ  ᴏꜰꜰɪᴄɪᴀʟ\n𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 ᴡʜᴀᴛꜱᴀᴘᴘ" },{quoted:mek })
 const vcard = `BEGIN:VCARD\n` // metadata of the contact card
             + `VERSION:3.0\n`
-            + `FN:CYBER-X USER\n` // full name
-            + `ORG:CYBER-X GANG 2023;\n`// the organization of the contact
-            + `TEL;type=CELL;type=VOICE;waid=94711421243:+94711421243\n`// WhatsApp ID + phone number
+            + `FN:NARUTO-MD USER\n` // full name
+            + `ORG:NARUTO-MD TEAM 2024;\n`// the organization of the contact
+            + `TEL;type=CELL;type=VOICE;waid=923096566451:+923096566451\n`// WhatsApp ID + phone number
             + `END:VCARD`
-await conn.sendMessage(from,{ contacts: { displayName: "CYBER-X USER" ,contacts: [{ vcard }] }},{quoted:mek })
+await conn.sendMessage(from,{ contacts: { displayName: "NARUTO-MD USER" ,contacts: [{ vcard }] }},{quoted:mek })
 
 }
 })
