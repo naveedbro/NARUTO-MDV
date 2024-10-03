@@ -85,7 +85,7 @@ cmd({
                 }
             ]
             let opts = {
-                image: 'https://telegra.ph/file/4c009990c1eb47c8b1d84.jpg',
+                image: 'https://i.imgur.com/oGKOTrX.jpeg',
                 header: '𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙱𝙾𝚃',
                 footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ',
                 body: datada.text
