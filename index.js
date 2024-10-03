@@ -1,1 +1,531 @@
-const _0x1c757c=_0x3712;(function(_0x1f2a16,_0x1a020d){const _0x3b7ab3=_0x3712,_0x1dd125=_0x1f2a16();while(!![]){try{const _0x19896e=-parseInt(_0x3b7ab3(0x300))/(-0x1985+0x1939+0x4d*0x1)+parseInt(_0x3b7ab3(0x36d))/(0x14*0x1d8+0xa89+-0x2f67)*(parseInt(_0x3b7ab3(0x386))/(-0x3*0x33f+0x41b+0x55*0x11))+parseInt(_0x3b7ab3(0x2ea))/(0x2d3+-0x2427+0x2158)*(parseInt(_0x3b7ab3(0x29e))/(-0x266f*-0x1+0xf0d+0x3577*-0x1))+parseInt(_0x3b7ab3(0x401))/(0xe71+-0x2518+-0x9*-0x285)*(parseInt(_0x3b7ab3(0x34d))/(-0x377+-0x179f+0x1b1d))+parseInt(_0x3b7ab3(0x4bf))/(0x98+-0x2290+0x200*0x11)*(-parseInt(_0x3b7ab3(0x28e))/(-0x1c5f+-0x162+0x7b*0x3e))+-parseInt(_0x3b7ab3(0x1db))/(0x6b*-0x51+-0x9c1+0x4a*0x97)+parseInt(_0x3b7ab3(0x380))/(-0x8c6*0x1+-0x10*0xf4+0x1*0x1811);if(_0x19896e===_0x1a020d)break;else _0x1dd125['push'](_0x1dd125['shift']());}catch(_0x3ba800){_0x1dd125['push'](_0x1dd125['shift']());}}}(_0x32bb,-0x1*-0x49bff+-0xe9*0x4b1+0x26660));function _0x3712(_0xc716b,_0x52fd32){const _0x193d8a=_0x32bb();return _0x3712=function(_0x4caad9,_0x1b0725){_0x4caad9=_0x4caad9-(0x1*0x101f+0xf2d+-0x1de0);let _0x574916=_0x193d8a[_0x4caad9];return _0x574916;},_0x3712(_0xc716b,_0x52fd32);}const {default:makeWASocket,useMultiFileAuthState,fetchLatestBaileysVersion,DisconnectReason,downloadContentFromMessage,jidNormalizedUser,getContentType}=require(_0x1c757c(0x4a0)+_0x1c757c(0x3cc)+_0x1c757c(0x187)),fs=require('fs'),P=require(_0x1c757c(0x3a8)),pino=require(_0x1c757c(0x3a8)),config=require(_0x1c757c(0x40a)),qrcode=require(_0x1c757c(0x3f3)+_0x1c757c(0x214)),dl=require(_0x1c757c(0x274)+_0x1c757c(0x508)),{DBM}=require(_0x1c757c(0x192)+'bm'),util=require(_0x1c757c(0x3fd)),{getBuffer,getGroupAdmins,getRandom,h2k,isUrl,Json,runtime,sleep,fetchJson}=require(_0x1c757c(0x4bb)+_0x1c757c(0x1f6)),{sms,downloadMediaMessage}=require(_0x1c757c(0x34a)),{search,download}=require(_0x1c757c(0x1ce)+_0x1c757c(0x27d)),axios=require(_0x1c757c(0x4ef)),{mods}=require(_0x1c757c(0x449)+_0x1c757c(0x27d)),fg=require(_0x1c757c(0x444)),getFBInfo=require(_0x1c757c(0x188)+_0x1c757c(0x332)),Heroku=require(_0x1c757c(0x417)+_0x1c757c(0x405)),FileType=require(_0x1c757c(0x4c1)),{cmd,commands}=require(_0x1c757c(0x315)),{File}=require(_0x1c757c(0x262)),prefix=config[_0x1c757c(0x420)],ownerNumber=[_0x1c757c(0x259)+'58'],l=console[_0x1c757c(0x4b3)],db_pool=new DBM({'db':config[_0x1c757c(0x461)+'RL']}),heroku=new Heroku({'token':config[_0x1c757c(0x376)+_0x1c757c(0x2b7)]});console[_0x1c757c(0x4b3)](_0x1c757c(0x415)+_0x1c757c(0x2ff)+_0x1c757c(0x277));if(!fs[_0x1c757c(0x3e0)](__dirname+(_0x1c757c(0x2fb)+_0x1c757c(0x28c)+_0x1c757c(0x3fa)))){if(!config[_0x1c757c(0x191)])return console[_0x1c757c(0x4b3)](_0x1c757c(0x2cb)+_0x1c757c(0x1c5)+_0x1c757c(0x4e8)+_0x1c757c(0x317)+_0x1c757c(0x4fa));const sessdata=config[_0x1c757c(0x191)][_0x1c757c(0x3f6)](_0x1c757c(0x487)+_0x1c757c(0x50a))[0x69*-0x13+0x106a+-0x89e],filer=File[_0x1c757c(0x42f)](_0x1c757c(0x4ad)+_0x1c757c(0x35e)+'/'+sessdata);filer[_0x1c757c(0x1d0)]((_0x3379bb,_0x587be9)=>{const _0x8599e8=_0x1c757c,_0xe2b28a={'zRbRa':_0x8599e8(0x33e)+_0x8599e8(0x4d8)+_0x8599e8(0x3ff)+'!!','AMGZQ':function(_0x1e90e7,_0x3fbd34){return _0x1e90e7+_0x3fbd34;},'goHbB':_0x8599e8(0x2fb)+_0x8599e8(0x28c)+_0x8599e8(0x3fa)};if(_0x3379bb)throw _0x3379bb;fs[_0x8599e8(0x463)](_0xe2b28a[_0x8599e8(0x2a2)](__dirname,_0xe2b28a[_0x8599e8(0x3ef)]),_0x587be9,()=>{const _0x2cdfbd=_0x8599e8;console[_0x2cdfbd(0x4b3)](_0xe2b28a[_0x2cdfbd(0x2a6)]);});});}const express=require(_0x1c757c(0x4d2)),app=express(),port=process[_0x1c757c(0x3d8)][_0x1c757c(0x235)]||-0x30d5+-0x316+0x1bb9*0x3;function _0x32bb(){const _0x26f4d8=['.mp4','video/mp4','DIT\x20COMMAN','📚\x20*Bot\x27s\x20R','NNgji','EPaPs','tion\x20\x0a\x0a*ɴᴀ','data','@g.us','aVzRv','73308146@g','1.3','9190833665','\x20ᴅᴇᴠɪᴄᴇ\x20ʙᴏ','wzpmB','ected\x20:```','\x20wait....\x20','react','hJiVK','ate','liXsn','bMyDP','pino','vQRQw','QOloM','Naruto-Md','gfADl','imageMessa','66452,9190','chat.whats','jdsvV','\x0a\x0a🔄\x20Latest','rQIii','OWNER_NUMB','🔄\x20\x20*_Pleas','lWgam','w.githubus','🐉\x20Naruto\x20M','4|0|3|2|1','extendedTe','360p','/tools/cha','MGYxP','9195472612','mage\x20Succe','AgnoS','ha.json','fileSize','🕊️','TKTZT','3.3','\x20List\x20Upda','app.net','package','```','RMATIONS*\x0a','BANNED_USE','rVyFd','ckets/bail','iHPiC','get','0@s.whatsa','sXOnV','photo','D\x20APK\x20INFO','be\x20a\x20Moder','n/pdf','QKnqe','aSsPF','mphmo','env','✔️\x20*User\x20al','cUSPb','messages','vARQx','HEROKU_APP','wait....\x20\x20','\x20*_Please\x20','existsSync','applicatio','safari','readdirSyn','Bot\x20Workin','tiktok','stickerMes','MAND\x20LIST-','https://fi','Herqb','qxiwU','S/main/JSO','ᴏᴘ*','ription\x20-\x20','wejos','goHbB','type','aJaHH','🧠\x20*Naruto-','qrcode-ter','\x0a\x0aR.\x20Rate\x20','SxFll','split','CXbIB','.mp3','D\x20COMMAND\x20','reds.json','conversati','OOhxO','util','true','ly\x20Loaded\x20','\x0a\x0a📚\x20Packag','406692bLbcuQ','QQXRY','PRmYH','ST-NARUTO-','ent','qmJRf','open','SxODI','🔐\x20*PROFILE','./config','audio/mp3','ed*\x20✅','MODERATORS','RHGYZ','endsWith','music','vbJYe','ANTI_LINK','CjQGd','ephemeralM','✔️\x20SQL\x20Data','IxCor','heroku-cli','xflni','1.7','dUOBu','oderator\x20L','\x0a*ᴘᴏᴡᴇʀᴇᴅ\x20','ssfully\x20Up','ator..❗*','writeFileS','PREFIX','UudcQ','KnwVi','PVovW','🔄\x20*Restart','🔐\x20*TEXT\x20TO','com_yowhat','FB\x20DOWNLOA','eseted*\x20✅\x0a','Configurat','d\x20from\x20htt','tcTSI','MyNFJ','*\x0a\x0a','d-whatsapp','fromURL','1080p','ALIVE_IMAG','aJHYB','CfWMv','jpGfU','seted*\x20✅','ebTlM','age\x20Succes','mOtXX','error','tent','dated*\x20✅','xjaDL','tytTW','trim','link','sage','iyOJx','.\x20\x20Restart','readMessag','api-dylux','OnCQN','_\x0a✔️\x20Usage\x20','pp.net','NQBVb','fouadwa-sc','FWNHI','1.8','GAdWB','HzxDu','tgpt?q=','──────────','IRSZk','𝙽𝙻𝙾𝙰𝙳𝙴𝚁*\x20📦','ata','/gpt','remoteJid','erYiI','HFUoo','e\x20wait....','NvPwR','ully..!*','age','Sgkqc','port\x20http:','daISQ','🧑‍🔧\x20*Pattern','HwJEs','toLowerCas','DATABASE_U','Fouad-WA','writeFile','WORK_TYPE','ʟᴛɪ\x20ᴅᴇᴠɪᴄᴇ','https://vi','name','iFJUo','xPQdZ','CYBER2','.toString(','format','Naruto-Md\x20','docu','rk\x20Wa\x20Bot*','XQkiN','videoMessa','wpFPI','PogvP','category','t...._*','/apps/','ʀᴜᴛᴏ-ᴍᴅ\x20ᴍᴜ','QUysT','commands','ize\x20:\x20','DB\x20Saved\x20S','BRedh','COMMAND\x20LI','xblXq','hGgJs','lTipR','ADwPy','yLRHI','ᴅ\x20ʙʏ\x20ʀɴᴅᴇᴠ','ANTI_BAD','subject','match','naruto-md@','ᴛ*\x0a*ᴘᴏᴡᴇʀᴇ','https://yo','ɪᴅ\x20-\x20','le.com/sto','catch','lUjYh','ᴅᴇᴠɪᴄᴇ\x20ʙᴏᴛ','ZlPpI','ption\x20-\x20','live\x20messa','cipantsUpd','path','\x20*🚫\x20Ragano','groupMetad','dSraA','WJWyd','\x0a\x0a*ᴄʏʙᴇʀ-x','QSdPi','uiUXI','MPkpA','ercontent.','\x0a📚\x20*App\x20na','ᴏ-ᴍᴅ\x20ᴍᴜʟᴛɪ','object','@whiskeyso','TOWAo','lease\x20cont','LecQF','SarJw','GEWNg','hGlJK','lNYmL','XpIRj','JBmqr','downloadMe','\x20List\x20Rese','RUTxu','https://me','ɪᴄᴇ\x20ʙᴏᴛ\x20:\x20','1203631747','tening\x20on\x20','-NARUTO-MD','qsUrs','log','em\x20informa','OyWvb','act\x20Bot\x20Ow','n/vnd.andr','ccessfully','KFZvK','N/info.jso','./lib/func','\x20:-\x20chatGP','eqFPr','join','17896VXSWpI','muxes','file-type','main','/dynos','OUCrw','sendFileUr','use','ist*','1.5','❌\x20```Anoth','YTMP3','AUTO_REACT','*\x0a📂\x20*App\x20S','dSaveMedia','UbHYP','ly\x20Updated','1.4','k.jpg','express','nd\x20Connect','dated*\x20✅\x0a\x0a','ync','text2img','jwFDi','Successful','ng\x20the\x20bot','ScLgR','APK','ommands...','output','downloadAn','dllink','MMAND\x20LIST','fOBSs','ᴛᴇᴀᴍ\x20ᴏꜰᴄ*','AGE','MZIkL','xtMessage','replace','y\x20Successf','ion\x20to\x20SES','SD\x20Quality','QiVsQ','ifpqI','title','Database\x20R','GgJta','axios','🪀\x20*Pattern','Amdi*\x20❗','dpCNh','jBygL','ciWHf','.us','Remove\x20you','ready\x20in\x20B','zOjkt','\x20ᴍᴜʟᴛɪ\x20ᴅᴇᴠ','v\x20!!','ZOARI','...*','mimetype','app.com','er\x20List\x20Up','stringify','_NAME','mkWYS','LETUN','..._*','\x20\x20Restarti','*Downloade','com/naveed','m/scraper','*Banned\x20Us',';;;','HysLP','znmYV','d\x20using\x20WA','83366564,9','\x20Bot\x20conne','pwsnv','TXuuq','ᴠᴏʟ-ɪɪ*\x0a*ᴘ','MovCg','📪\x20*Pattern','zAZxp','\x0a\x0a*ɴᴀʀᴜᴛᴏ-','gAjRQ','MENU_TEXT','*\x0a🚙\x20_Desci','O-MD*\x0a\x0a','ALIVE_MESS','user','LIST-NARUT','image','\x20your\x20Text','9182931907','sfully\x20Upd','NLfMb','/*\x0a\x0a*ɴᴀʀᴜᴛ','iLCZx','*Stickerpa','.._*','//localhos','OPENAI_KEY','lFYxW','wSbnT','eys','fb-downloa','XtAJh','YeNPE','xQAoz','───\x0a🔠\x20*Qui','51@s.whats','tore\x20Link\x20','SYvht','fromBuffer','SESSION_ID','postgres_d','creds.upda','phFsK','quoted','body','ʟᴏᴘ*','BOT_DETECT','\x20Openai\x20Ke','fix\x20is*\x20``','extra','r\x20List\x20Res','com/chamio','pattern','iNGJX','lkoUk','sk-','\x20ʙʏ\x20ʀɴᴅᴇᴠᴇ','04247368@g','vGVfn','dNPMk','s\x20based\x20Bo','head','function','VSrtA','rver-/main','FeLKR','\x20-\x20','detected..','❌\x20*You\x20are','FQYoF','XDBIR','izIXE','fficial/se','\x0a*NARUTO-M','ᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20','lastup','loggedOut','ck\x20Name\x20Su','essage\x20Det','p.net','eted*\x20✅\x0a\x0a🔄','odXKe','nstalled\x20a','TTDcF','cdEiN','RqTFt','🔐\x20*SEARCH\x20','9475551489','vJLiP','NARUTO-MD*','List\x20Updat','\x20your\x20sess','1203630438','rqeSZ','Web\x202.1','ssfully\x20Re','BZxLf','*Bad\x20word\x20','erator\x20to\x20','D\x20LIST-NAR','aptoide-sc','RTcJG','download','https://ra','aJadf','6@s.whatsa','abqth','PdduL','wLoYk','NHrun','COMMANDS','ZMAvN','ANTI_BOT','1010520RAANLy','r\x20List\x20Upd','nERTl','MjrRH','\x20IMAGE\x20COM','hRuak','1.2','hangayt.me','1@s.whatsa','ed...','profile','statusCode','ated*\x20✅\x0a\x0a🔄','fromMe','ʙʏ\x20ʀɴᴅᴇᴠᴇʟ','/play.goog','.moe/wzrdd','gBLeB','🔐\x20*DOWNLOA','9478874974','*Owner\x20Nam','ize\x20-:\x20','39054837@g','NLOADER','\x20*💃\x20Queen\x20','RbiTg','\x20\x20*_Please','tions','Moderator\x20','us\x0aS.\x20Syst','ready\x20in\x20M','wmplay','🍥\x20Naruto\x20M','ssJdQ','om\x20using\x20C','./plugins/','dXQwv','essage','*\x0a*ᴘᴏᴡᴇʀᴇᴅ','kpNOw','UklCE','CINEm','ᴇʟᴏᴘ*','ROR]','private','SaQaL','\x20Update\x20-:','ated*\x20✅','ᴍᴅ\x20ᴍᴜʟᴛɪ\x20ᴅ','content-ty','QUEENAMDI','*\x0a🚙\x20\x20_Desc','*You\x20are\x20n','jyCZu','\x20the\x20bot..','idUQu','ot\x20a\x20Moder','minal','vzans','messages.u','fCgqB','UTO-MD*\x0a\x0a','52@s.whats','iLOjT','connection','EWEke','mandList','OMMAND\x20LIS','📚\x20All\x20Plug','FQQoT','Link\x20-:\x20','MD*\x0a\x0a','listen','SSGpU','mZNNO','*\x0a\x0a📂\x20App\x20S','delete','insert','forEach','tXxNK','DER','edit','nickname','MJJoM','ryrID','diaMessage','*\x0a\x0a*ɴᴀʀᴜᴛᴏ','audio/mpeg','extname','ext','PORT','\x20ʙᴏᴛ*\x0a*ᴘᴏᴡ','DiXJN','yDtxF','\x20banned\x20fr','ame\x20:\x20','NiuuA','*Alive\x20mes','vofWc','g\x20the\x20bot.','gif','MFWYn','GNLzE','720p','UgQmT','alias','fIvlL','-:\x20https:/','gGqgf','*OpenAi\x20Ke','t\x20!\x20Please','XYLlj','opyey','https','wner\x20name\x20','\x20WhatsApp\x20','bro/UPLOAD','VDEqa','ULfbc','e-archive','Restarting','bYEiH','\x20Restartin','.js','mtwij','IvTFI','5959956605','OWNER_NAME','g\x20successf','\x0a🔄\x20\x20*_Plea','loadMessag','KbWsp','remove','vxKUm','unning\x20pre','megajs','...._*','*Owner\x20Num','LmeHZ','mWiYP','com_whatsa','vockm','sendMessag','baBTc','silent','ully\x20Updat','e\x20Successf','1829319072','90@s.whats','ℹ️\x20Default-','/badby_alp','message','🔐\x20*MAIN\x20CO','@bochiltea','📥\x20*Pattern','kbSdX','cted','\x20wait.....','date\x20Tool','4@s.whatsa','mlyIN','[PLUGIN\x20ER','raper','pushName','DvhWu','dxVdg','iption\x20-\x20','gXZMd','search','IxoEW','com_fmwhat','ps://fmmod','hNJrs','headers','skPvY','miRwN','_baileys/','_baileys/c','BAE','198ioDDXv','only_group','*Banned\x20us','\x20📚\x20*Bailey','HD\x20Quality','patch','ylwno','51,9230965','tiYaY','length','S_OWNER_NA','oid.packag','t*\x20❗','KKNFf','ing\x20the\x20Bo','ge\x20format*','5YSVEit','ᴅᴀʀᴋᴀʟᴘʜᴀx','uccessfull','1203630303','AMGZQ','AUTO_MSG_R','sticker','*\x20✅','zRbRa','ZceWO','YTMP4','otvaR','jFXsd','jlIov','RGNK','NcFDX','ion','9230965664','9472993243','pfqgp','⏲️\x20*Pattern','WHsbm','groupParti','fGLKI','\x20COMMAND\x20L','_KEY','pYrgK','re/apps/de','jid','Tnsxi','XmWfr','youtubedl','📦\x20*𝙰𝙿𝙺\x20𝙳𝙾𝚆','Md\x20AI\x20Mode','1.6','desc','XCgvI','1.1','T*\x0a\x0a','IST-NARUTO','d\x20WhatsApp','*Naruto-Md','*\x0a🚙\x20_Descr','yAuiW','quotedMess','Please\x20add','\x20&\x20','key','kvlvp','includes','s.com/foua','ULlVW','LdPyy','aQzSa','CWppa','atuoE','M\x20User\x20Lis','hiXwJ','er\x20Bot\x27s\x20m','VGHLJ','CXnJm','ZIoxU','size','aKDQH','ins\x20instal','JVEOA','keyMK','cNQFs','\x20*🤖\x20Queen\x20','*You\x20must\x20','anned\x20List','ElZgm','caption','T-NARUTO-M','pCAsr','128kbps','478272gTpsYS','1290','lTxUP','rmbAY','utube.com/','HVOvf','eset\x20Funct','uVqPA','bFXZj','JbaJS','KYCGu','DrXPp','54@s.whats','UTBsS','CUMtr','FZWyW','AYaFr','/auth_info','*\x20-\x20_Enter','msg','oXOOM','base\x20Conne','162250nWcVVM','watch?v=','prGAG','fwQvO','yDPDj','nRrDu','ZRDdc','text','sRETn','sage\x20and\x20i','EWsjl','❌\x20*Invalid','-ᴍᴅ\x20ᴍᴜʟᴛɪ\x20','Message','com_gbwhat','ᴇʀᴇᴅ\x20ʙʏ\x20ʀɴ','FFyQC','eNjbi','xnFdm','me\x20-:\x20','.update','./command','INBOX_USER','SION_ID\x20en','*Sticker\x20o','EAD','find','map','*Inbox\x20Use','ᴅᴇᴠᴇʟᴏᴘ*','\x0a\x0a────────','cted\x20✅','/config-va','mtype','SDKWG','startsWith','ZiLAy','@s.whatsap','QUEENELISA','Elisa*\x20❗','jzJmf','les.catbox','CPncw','psert','0,91954726','vwpqn','group','20@s.whats','MSVVb','oYNAa','der-new','bUnDb','\x20Updated*\x20','MEkaB','participan','D*\x0a\x0a','Details\x20Up','from','*Invalid\x20A','✅\x20Plugin\x20i','close','ner\x20or\x20Mod','🔒\x20Session\x20','tails?id=','WsfzB','TIKTOK\x20DOW','mJbUF','liuzx','ck\x20Access*','FopMH','jYTId','\x0a\x0a📱\x20Play\x20S','XmHMf','TBTsx','./lib/msg','send','hpYzj','14wWebsG','ɴᴜᴍʙᴇʀ\x20-\x20','🔐\x20*GROUP\x20C','aBGuM','hmljE','Server\x20lis','iuhjZ','se\x20wait...','dontAddCom','/prefix_he','video','icon','🔐\x20*EXTRA\x20C','sender','🔎\x20*Pattern','..*\x20⚠️\x0a\x0a*_P','ZDKkk','ga.nz/file','uynhH','led','UyzOI','\x0a\x0a📚\x20*App\x20n','pRomT','contextInf','.apk','*Menu\x20mess','*Moderator','ator\x20Frist','slice','Wmryc','🌅\x20*Pattern','oeOhT','196oHRaBc','JtyWh','concat','ber\x20Succes','vepbF','cGXCx','cTErE','SVdKy','RBezX','HEROKU_API','r\x20Ban_*\x20👨‍🔧','ted*\x20✅\x0a\x0a🔄\x20','play','ers\x20List\x20R','ᴇᴠɪᴄᴇ\x20ʙᴏᴛ*','YaXXd','shift','UXNzV','-MD*\x0a\x0a','1404040ybvGSX','240p','audio','DDPIM','ICohL',',\x20isLatest','3345eIFiLm','e\x20Name\x20-:\x20','jiECw','ready\x20in\x20P','lZiMi','S_PACK_NAM','🔐\x20*PHOTO\x20E','ing\x20the\x20bo','sapp','AI_MODE','ZwRDv','9474338694'];_0x32bb=function(){return _0x26f4d8;};return _0x32bb();}async function connectToWA(){const _0x3aed75=_0x1c757c,_0x1858dc={'kvlvp':_0x3aed75(0x46d)+_0x3aed75(0x1c8),'jBygL':function(_0x2628dc,_0x3d221f){return _0x2628dc==_0x3d221f;},'aVzRv':_0x3aed75(0x256),'yDPDj':function(_0x480f1c,_0x3905b6){return _0x480f1c(_0x3905b6);},'NiuuA':function(_0x48ca0b,_0x1e1ed0){return _0x48ca0b+_0x1e1ed0;},'bMyDP':_0x3aed75(0x1fe),'BRedh':function(_0x273659,_0x53d598){return _0x273659===_0x53d598;},'aSsPF':_0x3aed75(0x33c),'TXuuq':function(_0x14337d,_0x280441){return _0x14337d!==_0x280441;},'wLoYk':function(_0x128d6b){return _0x128d6b();},'lTxUP':function(_0x593038,_0x306781){return _0x593038===_0x306781;},'SVdKy':_0x3aed75(0x407),'ZiLAy':_0x3aed75(0x33b)+_0x3aed75(0x1bc)+_0x3aed75(0x4d3)+_0x3aed75(0x1e4),'hmljE':function(_0x133838,_0x1ba614){return _0x133838(_0x1ba614);},'FQYoF':_0x3aed75(0x493),'jyCZu':_0x3aed75(0x21f)+_0x3aed75(0x2de)+_0x3aed75(0x360),'iNGJX':_0x3aed75(0x3b7)+_0x3aed75(0x2c6)+_0x3aed75(0x50f)+_0x3aed75(0x31f),'lZiMi':_0x3aed75(0x20c)+'pe','GEWNg':function(_0x20d54c,_0x3f7b61){return _0x20d54c===_0x3f7b61;},'JtyWh':_0x3aed75(0x23f),'XmWfr':function(_0x1e0986,_0x45dd0b){return _0x1e0986(_0x45dd0b);},'Sgkqc':_0x3aed75(0x30d),'JBmqr':_0x3aed75(0x3e1)+_0x3aed75(0x3d4),'rQIii':function(_0x32349e,_0x2c3693){return _0x32349e===_0x2c3693;},'ULfbc':_0x3aed75(0x17a),'VDEqa':_0x3aed75(0x357),'iFJUo':_0x3aed75(0x393),'lWgam':_0x3aed75(0x382),'KnwVi':_0x3aed75(0x232),'RqTFt':function(_0x11ef01,_0x3c3ff3,_0x4b6f13){return _0x11ef01(_0x3c3ff3,_0x4b6f13);},'wSbnT':_0x3aed75(0x196),'xjaDL':function(_0x519492,_0x20c22a){return _0x519492===_0x20c22a;},'dpCNh':_0x3aed75(0x307),'IxoEW':_0x3aed75(0x3d1),'idUQu':function(_0xf61bbc,_0x593952){return _0xf61bbc===_0x593952;},'jwFDi':_0x3aed75(0x3ad)+'ge','DiXJN':_0x3aed75(0x2a4),'aBGuM':_0x3aed75(0x3e6)+_0x3aed75(0x440),'bUnDb':function(_0x3840a5,_0x2e7a2b){return _0x3840a5(_0x2e7a2b);},'rVyFd':_0x3aed75(0x414)+_0x3aed75(0x200),'CWppa':function(_0x412c4f,_0x3e19f1){return _0x412c4f==_0x3e19f1;},'lNYmL':_0x3aed75(0x3b9)+_0x3aed75(0x4e5),'LmeHZ':function(_0xf0de13,_0x3f82c6){return _0xf0de13!=_0x3f82c6;},'XDBIR':_0x3aed75(0x3fb)+'on','ICohL':function(_0xa98dad,_0x4c8dac){return _0xa98dad===_0x4c8dac;},'cTErE':function(_0x4941e4,_0x2bf42f){return _0x4941e4==_0x2bf42f;},'fwQvO':_0x3aed75(0x471)+'ge','QiVsQ':_0x3aed75(0x39a),'NNgji':_0x3aed75(0x325)+_0x3aed75(0x1b9),'otvaR':_0x3aed75(0x46d)+_0x3aed75(0x178),'oeOhT':function(_0x2c3095,_0x37214f){return _0x2c3095(_0x37214f);},'BZxLf':_0x3aed75(0x40d),'MovCg':function(_0x40c0d0,_0x560a29){return _0x40c0d0<_0x560a29;},'uiUXI':_0x3aed75(0x270)+_0x3aed75(0x47b)+_0x3aed75(0x2a0)+'y','iyOJx':_0x3aed75(0x2af)+_0x3aed75(0x295)+_0x3aed75(0x3ae)+_0x3aed75(0x50e)+_0x3aed75(0x26e)+_0x3aed75(0x32c)+_0x3aed75(0x2eb),'kpNOw':_0x3aed75(0x2a1)+_0x3aed75(0x1a3)+_0x3aed75(0x4f5),'opyey':function(_0x2794fc,_0x16ceb1){return _0x2794fc==_0x16ceb1;},'ZlPpI':_0x3aed75(0x4af)+_0x3aed75(0x1f1)+_0x3aed75(0x4f5),'vQRQw':_0x3aed75(0x1c6)+_0x3aed75(0x39c)+_0x3aed75(0x4f5),'qsUrs':function(_0x4cb932,_0x393071){return _0x4cb932==_0x393071;},'skPvY':_0x3aed75(0x2af)+_0x3aed75(0x18d)+_0x3aed75(0x3c6),'UgQmT':_0x3aed75(0x2af)+_0x3aed75(0x219)+_0x3aed75(0x3c6),'xQAoz':function(_0x2501e8,_0x19975d){return _0x2501e8==_0x19975d;},'TOWAo':_0x3aed75(0x39e)+_0x3aed75(0x2f6)+_0x3aed75(0x3c6),'XtAJh':_0x3aed75(0x17c)+_0x3aed75(0x32f)+_0x3aed75(0x3c6),'iLOjT':function(_0x3f92d6,_0x45abc5){return _0x3f92d6==_0x45abc5;},'hGgJs':_0x3aed75(0x391)+_0x3aed75(0x27a)+_0x3aed75(0x447),'UXNzV':function(_0xd270c4,_0x22bf1b){return _0xd270c4==_0x22bf1b;},'MSVVb':_0x3aed75(0x2b0)+_0x3aed75(0x1d3)+_0x3aed75(0x447),'phFsK':function(_0x44fd93,_0x5f4c9d){return _0x44fd93==_0x5f4c9d;},'gGqgf':_0x3aed75(0x3bd)+_0x3aed75(0x26f)+_0x3aed75(0x3c6),'MGYxP':_0x3aed75(0x1c1)+_0x3aed75(0x3cf)+_0x3aed75(0x447),'NQBVb':_0x3aed75(0x1ee)+_0x3aed75(0x1e3)+_0x3aed75(0x447),'fCgqB':_0x3aed75(0x28f),'znmYV':function(_0x508b3a,_0x43eee2){return _0x508b3a&&_0x43eee2;},'RTcJG':_0x3aed75(0x207),'RUTxu':function(_0x36d78e,_0x4b2622){return _0x36d78e&&_0x4b2622;},'baBTc':_0x3aed75(0x1ae)+_0x3aed75(0x239)+_0x3aed75(0x1fd)+_0x3aed75(0x4dc)+_0x3aed75(0x35c)+_0x3aed75(0x4a2)+_0x3aed75(0x4b6)+_0x3aed75(0x33d)+_0x3aed75(0x1cc)+_0x3aed75(0x4f6)+_0x3aed75(0x377),'wzpmB':function(_0x171079,_0x6f6190){return _0x171079(_0x6f6190);},'prGAG':_0x3aed75(0x315),'FFyQC':_0x3aed75(0x27c)+_0x3aed75(0x206),'DvhWu':function(_0x4a9b3b,_0x4cdb7e){return _0x4a9b3b==_0x4cdb7e;},'lUjYh':_0x3aed75(0x3fe),'UTBsS':function(_0x7d4899,_0x71ccd6){return _0x7d4899&&_0x71ccd6;},'QKnqe':_0x3aed75(0x453),'uVqPA':function(_0x23e72b,_0x5edb47){return _0x23e72b(_0x5edb47);},'MEkaB':_0x3aed75(0x3f2)+_0x3aed75(0x2bf)+_0x3aed75(0x4bc)+_0x3aed75(0x2c4),'pRomT':_0x3aed75(0x356)+'lp','QOloM':function(_0x3ff42c,_0x3187a6){return _0x3ff42c+_0x3187a6;},'UyzOI':_0x3aed75(0x395)+_0x3aed75(0x261)+_0x3aed75(0x19a)+'`','WHsbm':_0x3aed75(0x3c8),'rmbAY':_0x3aed75(0x46a),'cNQFs':function(_0x591f73,_0x458984){return _0x591f73==_0x458984;},'XQkiN':function(_0x5b857c,_0x334a40){return _0x5b857c<_0x334a40;},'Wmryc':_0x3aed75(0x4ca),'hiXwJ':_0x3aed75(0x48a),'aQzSa':_0x3aed75(0x489)+_0x3aed75(0x2ee)+_0x3aed75(0x301),'PRmYH':_0x3aed75(0x2e9),'vxKUm':_0x3aed75(0x2a8),'SarJw':function(_0x329ffb,_0x4c4974){return _0x329ffb+_0x4c4974;},'zOjkt':function(_0x6e50cf,_0x197de0){return _0x6e50cf==_0x197de0;},'liXsn':function(_0x52e404,_0x376d05){return _0x52e404>_0x376d05;},'pfqgp':_0x3aed75(0x381),'pwsnv':function(_0x55e050,_0x426a94){return _0x55e050+_0x426a9
+const {
+default: makeWASocket,
+useMultiFileAuthState,
+fetchLatestBaileysVersion,
+DisconnectReason,
+downloadContentFromMessage,
+jidNormalizedUser,
+Browsers,
+delay,
+prepareWAMessageMedia,
+generateWAMessageFromContent,
+getContentType,
+getDevice,
+proto
+} = require('@whiskeysockets/baileys')
+const fs = require('fs')
+const logger = require('pino')()
+const P = require('pino')
+const pino = require('pino')
+const config = require('./config')
+const NodeCache = require( "node-cache" )
+const msgRetryCounterCache = new NodeCache()
+const qrcode = require('qrcode-terminal')
+const dl = require('@bochilteam/scraper')
+const { DBM } = require('postgres_dbm')
+const util = require('util')
+const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('./lib/functions')
+const { sms,downloadMediaMessage } = require('./lib/msg')
+const { search , download } = require('aptoide-scraper')
+const axios = require('axios')
+const { mods } = require('fouadwa-scraper')
+const fg = require('api-dylux')
+const getFBInfo = require("fb-downloader-new");
+const Heroku = require('heroku-client')
+const FileType = require("file-type")
+const { cmd, commands } = require('./command')
+const { File } = require('megajs')
+const prefix = "."//config.PREFIX 
+const ownerNumber = ['595995660558']
+const l = console.log
+
+// ===========SESSION===========
+if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
+if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
+const sessdata = config.SESSION_ID.split("naruto-md@;;;")[1]
+const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
+filer.download((err, data) => {
+if(err) throw err
+fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
+console.log("🖇️ Authfiles Successfully loaded !!")
+})})}
+// <<==========PORTS===========>>
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 8000;
+//====================================
+
+async function connectToWA() {
+const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
+const { version, isLatest } = await fetchLatestBaileysVersion()
+console.log(`🤖 Defaultly using WA v${version.join('.')}, isLatest: ${isLatest}`)
+
+   const conn = makeWASocket({
+      version,
+      logger: pino({ level: 'silent' }),
+      printQRInTerminal: false, 
+      browser: ["Ubuntu", "Chrome", "20.0.04"],
+      auth: state,
+      msgRetryCounterCache,
+   });
+conn.ev.on('connection.update', (update) => {
+const { connection, lastDisconnect } = update
+if (connection === 'close') {
+if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
+connectToWA()
+}
+} else if (connection === 'open') {
+console.log('✅ Plugin installing in process...')
+const path = require('path');
+fs.readdirSync("./plugins/").forEach((plugin) => {
+if (path.extname(plugin).toLowerCase() == ".js") {
+require("./plugins/" + plugin);
+}
+});
+console.log('📚 All Plugins installed....')
+console.log('🔊 Naruto-Md Connected To WhatsApp ✅')
+delay(100);
+const botada = jidNormalizedUser(conn.user.id)   
+conn.sendMessage(botada, { image: { url : "https://i.imgur.com/oGKOTrX.jpeg" } , caption: "𝗡𝗔𝗥𝗨𝗧𝗢-𝗠𝗗 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗 𝗧𝗢 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 ✅\n\n*This is the result of our team's hard work and our team owns the bot's rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances.*\n\n🔰 *Official GitHub* - ```https://github.com/naveedbro```\n\n🪀 *WhatsApp Channel* - ```https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a```"})
+}
+})
+conn.ev.on('creds.update', saveCreds)
+conn.ev.on('messages.upsert', async(mek) => {
+try {
+mek = mek.messages[0]
+//console.log(JSON.stringify(mek,null,2))
+if (!mek.message) return	
+mek.message = (getContentType(mek.message) === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
+//if (mek.key && mek.key.remoteJid === 'status@broadcast') return
+const m = sms(conn, mek)
+const type = getContentType(mek.message)
+const content = JSON.stringify(mek.message)
+const from = mek.key.remoteJid
+const mentionByTag = type == 'extendedTextMessage' && mek.message.extendedTextMessage.contextInfo != null ? mek.message.extendedTextMessage.contextInfo.quotedMessage || [] : []
+const quoted = mek.quoted ? mek.quoted : mek
+const body = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text :(type == 'interactiveResponseMessage' ) ? mek.message.interactiveResponseMessage  && mek.message.interactiveResponseMessage.nativeFlowResponseMessage && JSON.parse(mek?.message?.interactiveResponseMessage?.nativeFlowResponseMessage?.paramsJson) && JSON.parse(mek?.message?.interactiveResponseMessage?.nativeFlowResponseMessage?.paramsJson).id :(type == 'templateButtonReplyMessage' )? mek.message.templateButtonReplyMessage && mek.message.templateButtonReplyMessage.selectedId  : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : ''
+const isCmd = body.startsWith(config.PREFIX)
+const command = isCmd ? body.slice(prefix.length).trim().split(' ').shift().toLowerCase() : ''
+const args = body.trim().split(/ +/).slice(1)
+const q = args.join(' ')
+const isGroup = from.endsWith('@g.us')
+const sender = mek.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (mek.key.participant || mek.key.remoteJid)
+const senderNumber = sender.split('@')[0]
+const botNumber = conn.user.id.split(':')[0]
+const pushname = mek.pushName || 'Naruto-Md User'
+const isMe = botNumber.includes(senderNumber)
+const isOwner = ownerNumber.includes(senderNumber) || isMe
+const botNumber2 = await jidNormalizedUser(conn.user.id);
+const mime = (quoted.msg || quoted).mimetype || ''
+const groupMetadata = isGroup ? await conn.groupMetadata(from).catch(e => {}) : ''
+const groupName = isGroup ? groupMetadata.subject : ''
+const participants = isGroup ? await groupMetadata.participants : ''
+const groupAdmins = isGroup ? await getGroupAdmins(participants) : ''
+const isBotAdmins = isGroup ? groupAdmins.includes(botNumber2) : false
+const isAdmins = isGroup ? groupAdmins.includes(sender) : false
+            const isAnti = (teks) => {
+                let getdata = teks
+                for (let i = 0; i < getdata.length; i++) {
+                    if (getdata[i] === from) return true
+                }
+                return false
+            }
+const reply = (teks) => {
+ conn.sendMessage(from, { text: teks }, { quoted: mek })
+}
+
+
+const ownerdata = (await axios.get('https://raw.githubusercontent.com/naveedbro/UPLOADS/main/raw.json')).data
+            config.LOGO = ownerdata.imageurl
+            config.BTN = ownerdata.button
+            config.FOOTER = ownerdata.footer
+            config.BTNURL = ownerdata.buttonurl
+            conn.edit = async (mek, newmg) => {
+                await conn.relayMessage(from, {
+                    protocolMessage: {
+                        key: mek.key,
+                        type: 14,
+                        editedMessage: {
+                            conversation: newmg
+                        }
+                    }
+                }, {})
+            }
+            conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
+                let mime = '';
+                let res = await axios.head(url)
+                mime = res.headers['content-type']
+                if (mime.split("/")[1] === "gif") {
+                    return conn.sendMessage(jid, {
+                        video: await getBuffer(url),
+                        caption: caption,
+                        gifPlayback: true,
+                        ...options
+                    }, {
+                        quoted: quoted,
+                        ...options
+                    })
+                }
+                let type = mime.split("/")[0] + "Message"
+                if (mime === "application/pdf") {
+                    return conn.sendMessage(jid, {
+                        document: await getBuffer(url),
+                        mimetype: 'application/pdf',
+                        caption: caption,
+                        ...options
+                    }, {
+                        quoted: quoted,
+                        ...options
+                    })
+                }
+                if (mime.split("/")[0] === "image") {
+                    return conn.sendMessage(jid, {
+                        image: await getBuffer(url),
+                        caption: caption,
+                        ...options
+                    }, {
+                        quoted: quoted,
+                        ...options
+                    })
+                }
+                if (mime.split("/")[0] === "video") {
+                    return conn.sendMessage(jid, {
+                        video: await getBuffer(url),
+                        caption: caption,
+                        mimetype: 'video/mp4',
+                        ...options
+                    }, {
+                        quoted: quoted,
+                        ...options
+                    })
+                }
+                if (mime.split("/")[0] === "audio") {
+                    return conn.sendMessage(jid, {
+                        audio: await getBuffer(url),
+                        caption: caption,
+                        mimetype: 'audio/mpeg',
+                        ...options
+                    }, {
+                        quoted: quoted,
+                        ...options
+                    })
+                }
+            }
+            conn.sendButtonMessage = async (jid, buttons, quoted, opts = {}) => {
+
+                let header;
+                if (opts?.video) {
+                    var video = await prepareWAMessageMedia({
+                        video: {
+                            url: opts && opts.video ? opts.video : ''
+                        }
+                    }, {
+                        upload: conn.waUploadToServer
+                    })
+                    header = {
+                        title: opts && opts.header ? opts.header : '',
+                        hasMediaAttachment: true,
+                        videoMessage: video.videoMessage,
+                    }
+
+                } else if (opts?.image) {
+                    var image = await prepareWAMessageMedia({
+                        image: {
+                            url: opts && opts.image ? opts.image : ''
+                        }
+                    }, {
+                        upload: conn.waUploadToServer
+                    })
+                    header = {
+                        title: opts && opts.header ? opts.header : '',
+                        hasMediaAttachment: true,
+                        imageMessage: image.imageMessage,
+                    }
+
+                } else {
+                    header = {
+                        title: opts && opts.header ? opts.header : '',
+                        hasMediaAttachment: false,
+                    }
+                }
+
+
+                let message = generateWAMessageFromContent(jid, {
+                    viewOnceMessage: {
+                        message: {
+                            messageContextInfo: {
+                                deviceListMetadata: {},
+                                deviceListMetadataVersion: 2,
+                            },
+                            interactiveMessage: {
+                                body: {
+                                    text: opts && opts.body ? opts.body : ''
+                                },
+                                footer: {
+                                    text: opts && opts.footer ? opts.footer : ''
+                                },
+                                header: header,
+                                nativeFlowMessage: {
+                                    buttons: buttons,
+                                    messageParamsJson: ''
+                                }
+                            }
+                        }
+                    }
+                }, {
+                    quoted: quoted
+                })
+                await conn.sendPresenceUpdate('composing', jid)
+                await sleep(1000 * 1);
+                return await conn.relayMessage(jid, message["message"], {
+                    messageId: message.key.id
+                })
+            }
+    
+//----------------------------------------------------------------------------------------------
+//============================================================================
+const onada =  config.MODERATORS.split(",")
+const isCreator = [ botNumber2 , ...onada ]
+      .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
+      .includes(sender)
+      
+ const inbx = config.INBOX_USER.split(",")
+const isPersUser = [ ...inbx ]
+      .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
+      .includes(sender)
+      
+const banbn = config.BANNED_USER.split(",")
+const isBanUser = [ ...banbn ]
+      .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
+      .includes(sender)
+
+ 
+let epaneda =  "923096566451"
+const epada = epaneda.split(",")
+const isDev = [ ...epada ]
+      .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
+      .includes(sender)
+//============================================================================ 
+    if( !isDev && from == '120363030304247368@g.us' ) return
+    if( !isDev && from == '120363174739054837@g.us' ) return
+    if( !isDev && from == '120363043873308146@g.us' ) return
+    
+  if( sender == '923096566451@s.whatsapp.net' ) {
+await conn.sendMessage(from, { react: { text: `🗿`, key: mek.key }})
+}
+
+if( sender == '923096566452@s.whatsapp.net' ) {
+await conn.sendMessage(from, { react: { text: `🎩`, key: mek.key }})
+}
+  
+  if( sender == '923096566453@s.whatsapp.net' ) {
+await conn.sendMessage(from, { react: { text: `🛠️`, key: mek.key }})
+}
+if( sender == '923096566454@s.whatsapp.net' ) {
+await conn.sendMessage(from, { react: { text: `🥷🏻`, key: mek.key }})
+}
+
+    
+    if ( config.WORK_TYPE == "only_group" ) {
+if ( !isGroup && isCmd && !isDev && !isCreator && !isPersUser ) return 
+      }
+      
+   if ( config.WORK_TYPE == "private" ) {
+if  ( isCmd && !isDev && !isCreator ) return
+      }
+      
+
+if ( isCmd && isBanUser ) return reply('❌ *You are banned from using Commands.....* ⚠️\n\n*_Please contact Bot Owner or Moderator to Remove your Ban_* 👨‍🔧')
+
+conn.sendFileUrl = async(jid, url, caption, quoted, options = {}) => {
+  let mime = '';
+  let res = await axios.head(url)
+  mime = res.headers['content-type']
+  if (mime.split("/")[1] === "gif") {
+      return conn.sendMessage(jid, { video: await getBuffer(url), caption: caption, gifPlayback: true, ...options }, { quoted: quoted, ...options })
+  }
+  let type = mime.split("/")[0] + "Message"
+  if (mime === "application/pdf") {
+      return conn.sendMessage(jid, { document: await getBuffer(url), mimetype: 'application/pdf', caption: caption, ...options }, { quoted: quoted, ...options })
+  }
+  if (mime.split("/")[0] === "image") {
+      return conn.sendMessage(jid, { image: await getBuffer(url), caption: caption, ...options }, { quoted: quoted, ...options })
+  }
+  if (mime.split("/")[0] === "video") {
+      return conn.sendMessage(jid, { video: await getBuffer(url), caption: caption, mimetype: 'video/mp4', ...options }, { quoted: quoted, ...options })
+  }
+  if (mime.split("/")[0] === "audio") {
+      return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
+  }
+}
+conn.downloadAndSaveMediaMessage = async (
+    message,
+    filename,
+    attachExtension = true
+  ) => {
+    let quoted = message.msg ? message.msg : message;
+    let mime = (message.msg || message).mimetype || "";
+    let messageType = message.mtype
+      ? message.mtype.replace(/Message/gi, "")
+      : mime.split("/")[0];
+    const stream = await downloadContentFromMessage(quoted, messageType);
+    let buffer = Buffer.from([]);
+    for await (const chunk of stream) {
+      buffer = Buffer.concat([buffer, chunk]);
+    }
+    let type = await FileType.fromBuffer(buffer);
+    trueFileName = attachExtension ? filename + "." + type.ext : filename;
+    // save to file
+    await fs.writeFileSync(trueFileName, buffer);
+    return trueFileName;
+  }
+  conn.downloadMediaMessage = async (message) => {
+    let mime = (message.msg || message).mimetype || "";
+    let messageType = message.mtype
+      ? message.mtype.replace(/Message/gi, "")
+      : mime.split("/")[0];
+    const stream = await downloadContentFromMessage(message, messageType);
+    let buffer = Buffer.from([]);
+    for await (const chunk of stream) {
+      buffer = Buffer.concat([buffer, chunk]);
+    }
+
+    return buffer;
+  }
+//==================================plugin map================================
+const events = require('./command')
+const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
+if (isCmd) {
+const cmd = events.commands.find((cmd) => cmd.pattern === (cmdName)) || events.commands.find((cmd) => cmd.alias && cmd.alias.includes(cmdName))
+if (cmd) {
+if (cmd.react) await conn.sendMessage(from, { react: { text: cmd.react, key: mek.key }})
+
+try {
+cmd.function(conn, mek, m,{from, l,prefix, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, mime, botNumber, pushname, isMe ,isOwner, mentionByTag ,groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, isCreator , isDev });
+} catch (e) {
+console.error("[PLUGIN ERROR]", e);
+}
+}
+}
+events.commands.map(async(command) => {
+if (body && command.on === "body") {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2,mime , botNumber, pushname, isMe , isOwner, mentionByTag , groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, isCreator ,isDev })
+} else if (mek.q && command.on === "text") {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, mime, botNumber, pushname, isMe ,isOwner, mentionByTag , groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply , isCreator ,isDev })
+} else if (
+(command.on === "image" || command.on === "photo") &&
+mek.type === "imageMessage"
+) {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2,mime, botNumber, pushname, isMe, isOwner, mentionByTag, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply , isCreator ,isDev })
+} else if (
+command.on === "sticker" &&
+mek.type === "stickerMessage"
+) {
+command.function(conn, mek, m,{from, l,prefix, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2,mime, botNumber, pushname, isMe, isOwner, mentionByTag ,groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply , isCreator ,isDev })
+}});
+if (config.ANTI_LINK == "true"){
+if (!isCreator && !isDev && isGroup && isBotAdmins ) {
+if (body.match(`chat.whatsapp.com`)) {
+if(groupAdmins.includes(sender)) return
+await conn.sendMessage(from, { delete: mek.key })  
+}}}
+
+if (config.AUTO_MSG_READ == "true"){
+await conn.readMessages([mek.key])
+}
+//-----------------------------AI MODE FUNCTIONS ----------------------------------------------
+if (config.AI_MODE == "true"){
+if ( body.startsWith('/gpt')) {
+let bodyy = body.split('/gpt')[1]
+const aimsg = await fetchJson(`https://vihangayt.me/tools/chatgpt?q=${bodyy}`)
+reply("🧠 *Naruto AI Mode :- chatGPT*\n\n"+aimsg.data)
+}
+}
+
+//------------------------------ REPLYS WITHOUT COMMANDS --------------------------------
+if ( body.startsWith('/prefix_help')) {
+reply("📚 *Bot's Running prefix is* ```" + config.PREFIX + "```")
+}
+
+//============================================================================
+const bad = await fetchJson(`https://raw.githubusercontent.com/naveedbro/UPLOADS/main/badby_alpha.json`)
+if (config.ANTI_BAD == "true"){
+  if (!isAdmins && !isDev) {
+  for (any in bad){
+  if (body.toLowerCase().includes(bad[any])){  
+    if (!body.includes('tent')) {
+      if (!body.includes('docu')) {
+        if (!body.includes('https')) {
+  if (groupAdmins.includes(sender)) return 
+  if (mek.key.fromMe) return   
+  await conn.sendMessage(from, { delete: mek.key })  
+  await conn.sendMessage(from , { text: '*Bad word detected..!*'})
+  await conn.groupParticipantsUpdate(from,[sender], 'remove')
+  }}}}}}}
+  
+  // ANTI BOT OKKOMATAMA DENNAM WADE 
+ if (config.BOT_DETECT == "true"){
+  if ( isGroup && !isAdmins && !isDev && !isMe && !isCreator && isBotAdmins ) {
+  if ( mek.id.startsWith("BAE") ) {
+await conn.sendMessage(from, { text: "❌ ```Another Bot's message Detected :``` 📚 *Baileys based Bot* ❗" })
+if ( config.ANTI_BOT == "true" && isBotAdmins ) {
+await conn.sendMessage(from, { delete: mek.key })
+await conn.groupParticipantsUpdate(from,[sender], 'remove')
+  }}
+    if ( mek.id.startsWith("QUEENAMDI") ) {
+await conn.sendMessage(from, { text: "❌ ```Another Bot's message Detected :``` *💃 Queen Amdi* ❗" })
+if ( config.ANTI_BOT == "true" && isBotAdmins ) {
+await conn.sendMessage(from, { delete: mek.key })
+await conn.groupParticipantsUpdate(from,[sender], 'remove')
+  }}
+    if ( mek.id.startsWith("QUEENELISA") ) {
+await conn.sendMessage(from, { text: "❌ ```Another Bot's message Detected :``` *🤖 Queen Elisa* ❗" })
+if ( config.ANTI_BOT == "true" && isBotAdmins ) {
+await conn.sendMessage(from, { delete: mek.key })
+await conn.groupParticipantsUpdate(from,[sender], 'remove')
+  }}
+    if ( mek.id.startsWith("RGNK") ) {
+await conn.sendMessage(from, { text: "❌ ```Another Bot's message Detected :``` *🚫 Raganork Wa Bot* ❗" })
+if ( config.ANTI_BOT == "true" && isBotAdmins ) {
+await conn.sendMessage(from, { delete: mek.key })
+await conn.groupParticipantsUpdate(from,[sender], 'remove')
+  }}
+      
+  }
+  }
+
+  
+//====================================================================
+ 
+switch (command) {
+case 'jid':
+if (!isCreator && !isDev ) return reply ('*You are not a Moderator..❗*')
+reply(from)
+break
+
+default:				
+if (isDev && body.startsWith('>')) {
+let bodyy = body.split('>')[1]
+let code2 = bodyy.replace("°", ".toString()");
+try {
+let resultTest = await eval(code2);
+if (typeof resultTest === "object") {
+reply(util.format(resultTest));
+} else {
+reply(util.format(resultTest));
+}
+} catch (err) {
+reply(util.format(err));
+}}}
+} catch (e) {
+const isError = String(e)
+console.log(isError)}
+})
+}
+app.get("/", (req, res) => {
+res.send("*Naruto-Md WhatsApp Bot Working successfully..!*");
+});
+app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
+setTimeout(() => {
+connectToWA()
+}, 3000);
