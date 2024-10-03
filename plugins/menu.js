@@ -30,47 +30,47 @@ cmd({
 		let rows = [
 {
 title : "MAIN COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙼𝙰𝙸𝙽 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙼𝙰𝙸𝙽 𝙲𝙾𝙼 𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `mainmenu`
 },
 {
 title : "DOWNLOAD COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix  + `downloadmenu`
 },
 {
 title : "SEARCH COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝚂𝙴𝙰𝚁𝙲𝙷 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝚂𝙴𝙰𝚁𝙲𝙷 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `searchmenu`
 },
 {
 title : "WHATSAPP GROUP COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙶𝚁𝙾𝚄𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙶𝚁𝙾𝚄𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `groupmenu`
 },
 {
 title : "WHATSAPP PROFILE COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix +  `profilemenu`
 },
 {
 title : "CONVERT COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙲𝙾𝙽𝚅𝙴𝚁𝚃 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙲𝙾𝙽𝚅𝙴𝚁𝚃 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `convertmenu`
 },
 {
 title : "TEXT TO IMAGE COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝚃𝙴𝚇𝚃 2 𝙸𝙼𝙶 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝚃𝙴𝚇𝚃 2 𝙸𝙼𝙶 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `t2imenu`
 },
 {
 title : "PHOTO EDIT COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙿𝙷𝙾𝚃𝙾 𝙴𝙳𝙸𝚃 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙿𝙷𝙾𝚃𝙾 𝙴𝙳𝙸𝚃 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `editmenu`
 },
 {
 title : "OTHER COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙾𝚃𝙷𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙾𝚃𝙷𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `othermenu`
 }
 
@@ -91,7 +91,7 @@ id: prefix + `othermenu`
 	   let opts = {
                 image: logoimage || '',
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: data 
 
             }
@@ -101,48 +101,48 @@ id: prefix + `othermenu`
         let rows = [
 {
 title : "MAIN COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙼𝙰𝙸𝙽 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙼𝙰𝙸𝙽 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `mainmenu`
 },
 {
 title : "DOWNLOAD COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix  + `downloadmenu`
 },
 {
 title : "SEARCH COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝚂𝙴𝙰𝚁𝙲𝙷 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝚂𝙴𝙰𝚁𝙲𝙷 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `searchmenu`
 },
 {
 title : "WHATSAPP GROUP COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙶𝚁𝙾𝚄𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙶𝚁𝙾𝚄𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `groupmenu`
 },
 {
 title : "WHATSAPP PROFILE COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix +  `profilemenu`
 },
 {
 title : "CONVERT COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙲𝙾𝙽𝚅𝙴𝚁𝚃 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙲𝙾𝙽𝚅𝙴𝚁𝚃 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `convertmenu`
 },
 {
 title : "TEXT TO IMAGE COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝚃𝙴𝚇𝚃 2 𝙸𝙼𝙶 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝚃𝙴𝚇𝚃 2 𝙸𝙼𝙶 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `t2imenu`
 },
 {
 title : "PHOTO EDIT COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙿𝙷𝙾𝚃𝙾 𝙴𝙳𝙸𝚃 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙿𝙷𝙾𝚃𝙾 𝙴𝙳𝙸𝚃 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `editmenu`
 },
 
 {
 title : "OTHER COMMANDS",
-description : "𝙲𝚈𝙱𝙴𝚁-𝚇 𝙾𝚃𝙷𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
+description : "𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳 𝙾𝚃𝙷𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚕𝙸𝚂𝚃",
 id: prefix + `othermenu`
 }
 
@@ -163,7 +163,7 @@ id: prefix + `othermenu`
 	   let opts = {
                 image: '',
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: "*Welcome to the future of WhatsApp management! Introducing a revolutionary assistant designed to streamline your communication needs. With an extensive range of features including: Efficient chat and group management, automation of common tasks, time-saving tools, and much more. Say goodbye to manual labor and hello to a seamless WhatsApp experience. Don't just use WhatsApp, master it with our cutting-edge assistant. Join the thousands who have already discovered the convenience of our service and take your productivity to the next level. Download now and become a WhatsApp wizard!*"
 
             }
@@ -208,9 +208,9 @@ ${menuc}
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 }
               
@@ -219,7 +219,7 @@ let buttons = [{
             let opts = {
                 image: menuimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: menumg
 
             }
@@ -281,9 +281,9 @@ ${menuc}
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 }
               
@@ -292,7 +292,7 @@ let buttons = [{
             let opts = {
                 image: menuimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: menumg
 
             }
@@ -358,9 +358,9 @@ ${menuc}
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 }
               
@@ -369,7 +369,7 @@ let buttons = [{
             let opts = {
                 image: menuimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: menumg
 
             }
@@ -438,9 +438,9 @@ ${menuc}
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 }
               
@@ -449,7 +449,7 @@ let buttons = [{
             let opts = {
                 image: menuimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: menumg
 
             }
@@ -520,9 +520,9 @@ ${menuc}
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 }
               
@@ -531,7 +531,7 @@ let buttons = [{
             let opts = {
                 image: menuimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: menumg
 
             }
@@ -598,9 +598,9 @@ ${menuc}
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 }
               
@@ -609,7 +609,7 @@ let buttons = [{
             let opts = {
                 image: menuimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: menumg
 
             }
@@ -678,9 +678,9 @@ ${menuc}
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 }
               
@@ -689,7 +689,7 @@ let buttons = [{
             let opts = {
                 image: menuimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: menumg
 
             }
@@ -763,9 +763,9 @@ ${menuc}
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 }
               
@@ -774,7 +774,7 @@ let buttons = [{
             let opts = {
                 image: menuimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: menumg
 
             }
@@ -841,9 +841,9 @@ ${menuc}
 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: "SUBSCRIBE US",
-                        url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x",
-                        merchant_url: "https://whatsapp.com/channel/0029Va5EQi7CRs1lXmZYKw0x"
+                        display_text: "FOLLOW US",
+                        url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a",
+                        merchant_url: "https://whatsapp.com/channel/0029VaUbFyXBFLgYH9g6S83a"
                     }),
                 }
               
@@ -852,7 +852,7 @@ let buttons = [{
             let opts = {
                 image: menuimg,
                 header: '',
-                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ',
+                footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙰𝚁𝚄𝚃𝙾-𝙼𝙳',
                 body: menumg
 
             }
