@@ -278,7 +278,7 @@ l(e)
 cmd({
     pattern: "system",
     react: "🖥️",
-    alias: ["s_info"],
+    alias: ["bot_info"],
     desc: "To Check bot\'s System information",
     category: "main",
     use: '.system',
